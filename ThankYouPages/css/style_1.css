@@ -1,0 +1,251 @@
+.state-base {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.state-base span {
+    color: green;
+}
+.fill-form {
+    font-size: 17px;
+    margin:20px 0 10px;
+	text-align:center;
+}
+.form-block {
+    border: 1px solid #4069a4;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px #848483;
+    margin-top: 40px;
+}
+.form-box a {
+    background: orange none repeat scroll 0 0;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    box-shadow: 1px 2px 3px #848483;
+    color: #2e2e2e;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+.form-block {
+    border: 1px solid #4069a4;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px #848483;
+    margin-top: 40px;
+}
+
+.privacy-pol {
+    color: #5182bc;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 30px 0;
+    text-align: center;
+}
+.privacy-detail {
+    color: #696969;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+}
+.heading-popup {
+
+    margin-bottom: 30px;
+
+}
+.green-listing ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	margin-top:10px;
+}
+.green-listing ul li {
+    font-size: 15px;
+    line-height: 25px;
+	margin-bottom:9px;
+}
+.green-listing ul li strong {
+    margin-right: 5px;
+}
+
+.red-listing ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	margin-top:10px;
+}
+.red-listing ul li {
+    font-size: 15px;
+    line-height: 25px;
+	margin-bottom:9px;
+}
+.red-listing ul li strong {
+    margin-right: 5px;
+}
+
+.cntct-box{border:1px solid #b2caec;padding:15px;background:#fff;border-radius:15px;text-align:center;margin-top:0;}
+.cntct-box h2{color:#ff8a00;font-weight:600;font-size:36px;}
+.cntct-box p{font-size:15px;}
+.sales-call{text-align:center;margin:30px 0 15px;font-size:16px;}
+.clx-btn{text-align:center;}
+.clx-btn a {
+    color: red;
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+hr{ display:none;}
+.p-footer-navigation{margin-top:30px;}
+.cntct-box h2 span {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+/****************/
+.heading-popup {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.heading-popup span {
+    border-bottom: 2px solid #f1c3a0;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0px 50px;
+    
+}
+
+.leads-col::after {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ffffff 0%, #ffffff 6%, #fcffff 7%, #ffffff 9%, #fbffff 9%, #feffff 9%, #f9ffff 10%, #feffff 10%, #f9ffff 11%, #fdffff 11%, #feffff 12%, #f9ffff 13%, #ffffff 13%, #f9ffff 14%, #fcffff 16%, #f7ffff 16%, #fcffff 16%, #f7ffff 17%, #fcffff 17%, #f7ffff 18%, #fcffff 18%, #f7ffff 19%, #f7fcff 19%, #f7ffff 20%, #fbfeff 20%, #f6fcff 21%, #fbfeff 21%, #f7fcff 22%, #f6feff 24%, #f7f9ff 24%, #f6feff 25%, #f9feff 25%, #f3fdff 26%, #faf9ff 26%, #f6fbff 26%, #f7f9ff 27%, #f6feff 28%, #f7f6ff 28%, #f6faff 29%, #f1faff 29%, #f7faff 29%, #f2fbff 30%, #f2fbff 30%, #f7faff 30%, #f2fcff 31%, #f2f7ff 31%, #f4fcff 32%, #f2f7ff 32%, #f2f8ff 32%, #f4fcff 33%, #f2f8ff 33%, #f4f7ff 33%, #eff7ff 34%, #f4f7ff 34%, #eef7ff 35%, #f3f9ff 36%, #eff7ff 36%, #f3f8ff 37%, #eef9ff 38%, #eef6ff 39%, #f0f9ff 40%, #ebf3ff 40%, #eef7ff 40%, #ecf4ff 41%, #eff7ff 41%, #ecf4ff 42%, #eff7ff 43%, #ecf4ff 46%, #eef7ff 47%, #ecf3ff 47%, #eef7ff 47%, #ecf3ff 48%, #eef7ff 48%, #e9f1ff 49%, #edf5ff 49%, #eef5fc 50%, #e9f6fe 50%, #edf4ff 50%, #eef5fd 50%, #e9f6fd 51%, #ecf4ff 51%, #eff7ff 51%, #eaf2ff 52%, #ecf4ff 52%, #eaf2fe 52%, #ecf3fc 53%, #e7f2ff 54%, #e8f7ff 54%, #ecf3fb 54%, #e8f2fe 55%, #e7f4fc 55%, #e8effd 56%, #e7f4fc 56%, #e9f2fe 57%, #e8f3fe 58%, #e9f3f9 58%, #e7eefc 59%, #e6f3ff 59%, #e9f3f9 59%, #e7eefb 60%, #e6f2ff 60%, #e8f4fd 60%, #e8eeff 60%, #e6f1ff 61%, #e7effc 61%, #e7eeff 62%, #e3effb 62%, #e7efff 62%, #e7efff 64%, #e4effc 65%, #e7efff 65%, #e4effc 66%, #e6eeff 67%, #e5f1f9 67%, #e7effb 67%, #e6eefe 67%, #e5effd 68%, #e0effe 68%, #e4effc 70%, #e1effe 70%, #e4effc 71%, #e1effe 71%, #e3effd 71%, #e0eff9 72%, #ddeffd 72%, #e3ecfe 72%, #e1eef9 73%, #ddeffd 73%, #e3edfe 73%, #e2edf9 74%, #ddeffc 74%, #e2edff 74%, #e3edf9 74%, #ddeffb 75%, #e0efff 75%, #deeffa 75%, #deecfb 76%, #e0eefa 77%, #deecfc 77%, #dfeefa 78%, #deecfc 78%, #e0eef8 78%, #ddedfd 79%, #e1e9f9 79%, #ddebfd 80%, #e1eafe 80%, #ddebfc 81%, #ddebfe 81%, #deebf9 81%, #dee6fc 81%, #deeaff 82%, #deeaf9 82%, #ddefff 83%, #dfeafa 83%, #deecfc 85%, #deeafa 85%, #daecfc 86%, #deeaf9 86%, #ddebfe 86%, #ddecfd 87%, #dee9f9 87%, #dee7fb 87%, #dcecfb 88%, #dbe6f6 88%, #dcebfb 88%, #ddebfb 89%, #dbe6f6 89%, #ddebfb 89%, #dcebfb 90%, #dbe6f6 90%, #dcecfc 91%, #dce6f6 91%, #dde9f9 91%, #d9e7fc 91%, #d9e8f6 92%, #dee9fe 92%, #d8e8fa 93%, #dde8fa 93%, #dbe7fc 93%, #d8e9f8 94%, #dde8f7 94%, #dce7fc 94%, #d8e9f9 95%, #dae6f7 95%, #dae6fb 95%, #d9eafa 95%, #dae6fb 96%, #d9e9fa 97%, #dbe7fc 98%, #d9e6f9 99%, #dae7fe 99%, #d9e6f9 100%, #dbe6fc 100%) repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 400px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+	border-radius:10px;
+}
+.leads-col {
+    border: 2px solid #224578;
+    border-radius: 10px;
+    padding: 25px 60px;
+	 z-index: 9999;
+	position: relative;
+	min-height: 400px;
+}
+.green-listing ul li {
+    font-size: 18px;
+    line-height: 29px;
+    padding-left: 35px;
+    position: relative;
+}
+.green-listing ul li::after {
+    background: rgba(0, 0, 0, 0) url("../images/tickmark.png") repeat scroll 0 0;
+	background-repeat:no-repeat;
+    content: "";
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    z-index: 9999;
+	margin-top:-12px;
+}
+.red-listing ul li {
+    font-size: 18px;
+    line-height: 29px;
+	padding-left: 35px;
+    position: relative;
+
+   
+}
+.red-listing ul li::after {
+    background:url("../images/cancel-mark.png") repeat scroll 0 0;
+	background-repeat:no-repeat;
+    content: "";
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 4px;
+    width: 24px;
+    z-index: 9999;
+}
+.logo-annuity {
+    padding: 20px 0;
+    text-align: center;
+}
+.thanks-page {
+    margin: 0 auto;
+    max-width: 850px;
+}
+.red-listing {
+    padding-left: 60px;
+}
+.call-num {
+    color: #333;
+    font-family: "PT Sans",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    margin-top: 9px;
+    text-align: center;
+}
+
+/*****oopx****/
+.recontact-form {
+    margin: 0 auto 30px;
+    text-align: center;
+	margin-bottom:12px;
+}
+.recontact-form label {
+    display: inline-block;
+    margin: 0 auto;
+}
+.recontact-form input[type="text"] {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 3px #ddd;
+    display: iline-block;
+    height: 32px;
+    margin: 9px 0;
+    width: 24%;
+	border-radius:4px;
+	padding:0 10px;
+}
+.recontact-form a {
+    background: #ffa200 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+	border-radius:4px;
+	text-decoration:none !important;
+	padding:6px 12px 4px;
+}
+.recontact-form a:hover{
+	background:#4069a4 !important;
+	color:#fff;
+}
+
+.leads-col.custom-grad:after{height:280px;}
+
+@media screen and (max-width:992px){
+	
+	.red-listing {
+    padding-left: 15px;
+}
+}
+
+@media screen and (max-width:490px){
+.leads-col{padding:25px 15px;}
+.p-footer-navigation{padding:10px 15px;}
+}

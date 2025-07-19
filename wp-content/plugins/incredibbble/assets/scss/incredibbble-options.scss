@@ -1,0 +1,252 @@
+@import "partials/mixins";
+
+.wrap {
+    margin: 20px 30px 10px 12px;
+}
+
+.incredibbble-options {
+    background-color: #FAFAFA;
+    display: table;
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+
+    *:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .striped-bg {
+        position: relative;
+        
+        > * {
+            position: relative;
+            z-index: 10;
+        }
+
+        &:before,
+        &:after {
+            display: block;
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0; left: 0;
+        }
+
+        &:before {
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSJ0cmFuc3BhcmVudCI+PC9yZWN0Pgo8cGF0aCBkPSJNMCA1TDUgMFpNNiA0TDQgNlpNLTEgMUwxIC0xWiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjEiPjwvcGF0aD4KPC9zdmc+");
+            opacity: 0.15;
+        }
+    }
+
+    form {
+        margin-bottom: 0;
+    }
+}
+
+.incredibbble-options-sidenav,
+.incredibbble-options-content {
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+}
+
+.incredibbble-options-sidenav {
+    background-color: #37474F;
+    width: 240px;
+}
+
+.incredibbble-options-content {
+    padding-bottom: 90px;
+}
+
+.incredibbble-options-header {
+    border-bottom: 1px solid rgba(#FFFFFF, 0.04);
+    padding: 40px 30px 64px;
+    transition: padding 0.3s ease;
+
+    .no-tabs & {
+        padding-bottom: 20px;
+    }
+
+    &:before {
+        opacity: 0.25;
+    }
+
+    &:after {
+        background-image: linear-gradient(0deg, #37474F 0%,rgba(253, 253, 253, 0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#37474F', endColorstr='#0037474F',GradientType=1);
+    }
+}
+
+.incredibbble-options-title {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.incredibbble-options-subtitle {
+    color: #B0BEC5;
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+.incredibbble-options-nav {
+    margin: 0 0 90px;
+
+    > li {
+        margin: 0;
+
+        > a {
+            border-bottom: 1px solid rgba(#FFFFFF, 0.04);
+            color: #B0BEC5;
+            display: block;
+            font-size: 14px;
+            padding: 12px 30px;
+            position: relative;
+            text-decoration: none;
+            transition: none;
+        }
+
+        &.active {
+            > a {
+                background-color: #00BCD4;
+                border-color: transparent !important;
+                color: #FFFFFF !important;
+                margin-left: -8px;
+                padding-left: 38px;
+
+                &:before,
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    position: absolute;
+                }
+
+                &:before {
+                    border-width: 0 8px 8px 0;
+                    border-color: transparent darken(#00BCD4, 15%) transparent transparent;
+                    left: 0;
+                    bottom: -9px;
+                }
+
+                &:after {
+                    border-width: 10px 10px 10px 0;
+                    border-color: transparent #FAFAFA transparent transparent;
+                    right: 0;
+                    top: 11px;
+                }
+            }
+        }
+    }
+}
+
+.incredibbble-options-footer {
+    border-top: 1px solid #E8E9EB;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 240px; right: 0;
+
+    #save {
+        float: right;
+    }
+}
+
+.incredibbble-options-credits {
+    color: #9A9B9D;
+
+    span {
+        &:last-child {
+            float: right;
+        }
+    }
+}
+
+.incredibbble-panel {
+    .incredibbble-panel-header {
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #E8E9EB;
+        padding: 40px 30px 20px;
+
+        &:after {
+            background-image: linear-gradient(0deg, #FFFFFF 30%,rgba(253, 253, 253, 0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#00FFFFFF',GradientType=1);
+        }
+    }
+
+    .incredibbble-panel-title {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+
+    .incredibbble-panel-subtitle {
+        color: #9A9B9D;
+        font-size: 14px;
+        margin: 0 0 10px;
+    }
+
+    .incredibbble-panel-tabs {
+        margin: 30px -30px -20px;
+        padding: 0 30px;
+        @include clearfix();
+
+        > li {
+            margin: 0;
+            display: block;
+            float: left;
+            margin-right: -1px;
+
+            > a {
+                background-color: transparent;
+                border: 1px solid #E8E9EB;
+                color: #9A9B9D;
+                display: block;
+                font-size: 14px;
+                padding: 12px 20px;
+                text-decoration: none;
+                margin-bottom: -1px;
+                transition-property: color;
+
+                &:hover,
+                &:focus {
+                    color: #37474F;
+                }
+            }
+
+            &.active {
+                > a {
+                    background-color: #FAFAFA;
+                    border-bottom-color: #FAFAFA;
+                    color: #37474F;
+                    cursor: default
+                }
+            }
+        }
+    }
+
+    .incredibbble-panel-content {
+        padding: 30px;
+    }
+}
+
+.incredibbble-field {
+    .incredibbble-field-subtitle,
+    .incredibbble-field-description {
+        color: #9A9B9D;
+    }
+}
+
+#wpfooter {
+    padding: 15px 30px;
+}

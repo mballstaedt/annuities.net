@@ -1,0 +1,20 @@
+/*
+Theme Name: Writsy
+Theme URI: https://wp.incredibbble.com/writsy
+Author: Incredibbble
+Author URI: https://incredibbble.com/
+Description: Premium WordPress theme by Incredibbble
+Version: 1.0.2
+License:
+License URI: 
+Tags: left-sidebar, right-sidebar, post-formats, theme-options, translation-ready, full-width-template, custom-menu, editor-style, featured-images, custom-colors
+Text Domain: writsy
+*/
+
+@import "assets/css/writsy.css";
+
+.form-col{padding:10px 20px 20px;;}
+.form-col label{font-weight:500;font-size:16px; color:#000;}
+.form-col input[type="text"]{width:100%;padding:6px;box-shadow:0px 0px 2px #ddd;}
+.form-col select{padding:6px;box-shadow:0px 0px 2px #ddd;border-radius:4px}
+.form-col textarea{width:100%;}

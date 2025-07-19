@@ -1,0 +1,279 @@
+/*
+Theme Name: Writsy Child
+Template: writsy
+Author: Incredibbble
+Author URI: https://incredibbble.com/
+Description: Child theme of Writsy theme by Incredibbble
+Version: 1.0.0
+License:
+License URI: 
+Tags: black, white, orange, light, left-sidebar, right-sidebar, responsive-layout, post-formats, theme-options, translation-ready, full-width-template, custom-menu, editor-style, featured-images, custom-colors
+*/
+
+@import url("../writsy/style.css");
+
+
+.entry-meta{ display:none !important;}
+.entry-views-count,
+.entry-comments-count,
+.entry-share-links,
+.author-info,
+.comments-area,
+.card-media {
+	display:none !important;
+}
+
+
+.form-bx label {
+    color: #212121;
+    display: block;
+    font-family: "Dosis",sans-serif;
+    font-size: 16px;
+  
+    margin-bottom: 10px;
+    text-align: left;
+}
+.form-bx input {
+    margin-bottom: 10px;
+}
+.form-bx select {
+    margin-bottom: 10px;
+}
+.form-bx > a {
+    background: #154887 url("https://www.annuities.net/wp-content/uploads/2017/06/blue-arrow.png") no-repeat scroll 96% 60%;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto 10px;
+    max-width: 70%;
+    padding: 10px 10px 5px;
+    text-decoration: none;
+    text-shadow: 0 0 2px #000;
+}
+.form-bx > a:hover{
+	background: #ee8620 url("https://www.annuities.net/wp-content/uploads/2017/06/yellow-arrow.png") no-repeat scroll 96% 60%;
+	color:#fff !important;
+	
+}
+/****Sidebar**********/
+.main-box-form{font-family: 'Droid Sans', sans-serif;}
+.sidebar .widget {
+    background: #f0f1f3 none repeat scroll 0 0;
+    padding: 0;
+}
+.form-heading {
+    background: #26b889 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 11px 5px;
+}
+.form-bx {
+    padding: 10px 20px 30px;
+}
+.b-retire {
+    color: #3d3e40;
+    font-weight: bold;
+    padding-top: 15px;
+	font-size:17px;
+}
+.get-qoutes-btn {
+    display: inline-block;
+    margin-bottom: 23px !important;
+    margin-top: 25px !important;
+}
+
+/****search-hide****/
+.search-trigger, .search-form{ display:none !important;}
+
+
+
+
+
+.posts-list .posts-list-item-meta{display:none;}
+
+
+
+.age-heading {
+
+    font-size: 16px;
+
+    color: rgb(33, 33, 33);
+
+    border-bottom: 1px dashed #000;
+
+    padding-bottom: 8px;
+
+    margin-bottom: 8px;
+
+	font-family:"Montserrat", sans-serif;
+
+}
+
+
+
+.accordion-p .vc_tta-panel-heading {
+
+    background: none !important;
+
+    border: 0 !important;
+
+    border-bottom: 1px solid #ddd !important;
+
+	border-radius:0 !important;
+
+}
+
+.accordion-p .vc_tta-panel.vc_active .vc_tta-panel-heading {border:0 !important;}
+
+.accordion-p .vc_tta-panel-body {
+
+    background: none !important;
+
+    border: 0 !important;
+
+    padding-left: 45px !important;
+
+    border-bottom: 1px solid #ddd !important;
+
+	border-radius:0 !important';
+
+}
+
+.accordion-p .vc_tta-title-text {
+
+    font-size: 12px !important;
+
+}
+
+
+
+
+
+.add-annuity {
+
+    position: relative;
+
+    text-align: center;
+
+}
+
+.add-annuity > img {
+
+    width: 100%;
+
+}
+
+.form-checkbox {
+
+    max-width: 215px;
+
+    position: absolute;
+
+    right: 28px;
+
+    top: 30px;
+
+    width: 100%;
+
+    max-width: 215px;
+
+    position: absolute;
+
+    right: 28px;
+
+    top: 45px;
+
+    width: 100%;
+
+}
+
+.form-checkbox a {
+
+    background: #ff9b17;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    display: inline-block;
+
+    text-transform: uppercase;
+
+    padding: 5px 20px;
+
+    text-decoration: none;
+
+    color: #8d4800;
+
+}
+
+.form-checkbox a:hover{
+
+	background:#003064 ;
+
+	color:#fff;
+
+}
+
+
+
+
+
+.footer-logos {
+
+    margin-top: 10px;
+
+    padding: 10px 0;
+
+    text-align: center;
+
+}
+
+.disclaimerbox {
+
+    text-align: center;
+
+}
+
+.footer {
+
+    font-size: 13px;
+
+    padding: 15px 0 20px;
+
+}
+
+.footer-copyright {
+
+    padding: 10px 0;
+
+}
+
+.home .main-content{padding-bottom:0;}
+.home .entry{ margin-bottom:0;}
+.site-navigation, .featured-area{margin-bottom:30px;}
+.recommended-posts-title.h2 span:before{display:none;}
+.striketrough-heading span:before{display:none;}
+.related-posts-title span:before{display:none;}
+
+.site-info{padding:5px 0;}
+
+
+.listing-box-p {
+    list-style-type: square;
+    color: orange;
+    padding-top: 0;
+    padding-left: 45px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.listing-box-p span {
+    color: #212121;
+}
+
+.featured-area .entry-title {
+max-height:inherit !important;
+}

@@ -1,0 +1,73 @@
+/*!
+ * Writsy icons.
+ */
+@font-face {
+    font-family: 'Writsy';
+    src: url('../fonts/Writsy.eot?fs4bad');
+    src: url('../fonts/Writsy.eot?fs4bad#iefix') format('embedded-opentype'),
+         url('../fonts/Writsy.ttf?fs4bad') format('truetype'),
+         url('../fonts/Writsy.woff?fs4bad') format('woff'),
+         url('../fonts/Writsy.svg?fs4bad#Writsy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wi {
+    display: inline-block;
+    font-family: 'Writsy' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    speak: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wi-arrow-down:before {
+    content: "\e900";
+}
+.wi-arrow-left:before {
+    content: "\e901";
+}
+.wi-arrow-right:before {
+    content: "\e902";
+}
+.wi-arrow-up:before {
+    content: "\e903";
+}
+.wi-feather:before {
+    content: "\e906";
+}
+.wi-pause:before {
+    content: "\e904";
+}
+.wi-play:before {
+    content: "\e905";
+}
+.wi-times:before {
+    content: "\e907";
+}
+
+/*!
+ * FontAwesome
+ */
+.fa {
+    font-size: 14px;
+}
+
+.fa-2x {
+    font-size: 28px;
+}
+
+.fa-3x {
+    font-size: 42px;
+}
+
+.fa-4x {
+    font-size: 56px;
+}
+
+.fa-5x {
+    font-size: 70px;
+}

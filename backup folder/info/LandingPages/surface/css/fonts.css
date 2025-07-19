@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13 Apr, 2015, 12:05:09 PM
+    Author     : jitendra
+*/
+
+@font-face {
+    font-family: 'GothamNarrow-Book';
+    src: url('../fonts/GothamNarrow-Book.eot?#iefix') format('embedded-opentype'),  url('GothamNarrow-Book.otf')  format('opentype'),
+        url('../fonts/GothamNarrow-Book.woff') format('woff'), url('../fonts/GothamNarrow-Book.ttf')  format('truetype'), url('GothamNarrow-Book.svg#GothamNarrow-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GothamNarrow-Bold';
+    src: url('../fonts/GothamNarrow-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/GothamNarrow-Bold.otf')  format('opentype'),
+        url('../fonts/GothamNarrow-Bold.woff') format('woff'), url('../fonts/GothamNarrow-Bold.ttf')  format('truetype'), url('../fonts/GothamNarrow-Bold.svg#GothamNarrow-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamNarrow-UltraItalic';
+    src: url('../fonts/GothamNarrow-UltraItalic.eot?#iefix') format('embedded-opentype'),  url('../fonts/GothamNarrow-UltraItalic.otf')  format('opentype'),
+        url('../fonts/GothamNarrow-UltraItalic.woff') format('woff'), url('../fonts/GothamNarrow-UltraItalic.ttf')  format('truetype'), url('GothamNarrow-UltraItalic.svg#GothamNarrow-UltraItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham_htf_lightregular';
+    src: url('../fonts/gothamhtf-light-webfont.eot');
+    src: url('../fonts/gothamhtf-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gothamhtf-light-webfont.woff2') format('woff2'),
+        url('../fonts/gothamhtf-light-webfont.woff') format('woff'),
+        url('../fonts/gothamhtf-light-webfont.ttf') format('truetype'),
+        url('../fonts/gothamhtf-light-webfont.svg#gotham_htf_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamNarrow-Ultra';
+    src: url('../fonts/GothamNarrow-Ultra.eot?#iefix') format('embedded-opentype'),  url('../fonts/GothamNarrow-Ultra.otf')  format('opentype'),
+        url('../fonts/GothamNarrow-Ultra.woff') format('woff'), url('../fonts/GothamNarrow-Ultra.ttf')  format('truetype'), url('../fonts/GothamNarrow-Ultra.svg#GothamNarrow-Ultra') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothamNarrow-BoldItalic';
+    src: url('../fonts/GothamNarrow-BoldItalic.eot?#iefix') format('embedded-opentype'),  url('GothamNarrow-BoldItalic.otf')  format('opentype'),
+        url('../fonts/GothamNarrow-BoldItalic.woff') format('woff'), url('GothamNarrow-BoldItalic.ttf')  format('truetype'), url('../fonts/GothamNarrow-BoldItalic.svg#GothamNarrow-BoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham_htf_bookregular';
+    src: url('../fonts/gothamhtf-book-webfont.eot');
+    src: url('../fonts/gothamhtf-book-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gothamhtf-book-webfont.woff2') format('woff2'),
+        url('../fonts/gothamhtf-book-webfont.woff') format('woff'),
+        url('../fonts/gothamhtf-book-webfont.ttf') format('truetype'),
+        url('gothamhtf-book-webfont.svg#gotham_htf_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gotham_htfmedium';
+    src: url('../fonts/gothamhtf-medium-webfont.eot');
+    src: url('../fonts/gothamhtf-medium-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gothamhtf-medium-webfont.woff2') format('woff2'),
+        url('../fonts/gothamhtf-medium-webfont.woff') format('woff'),
+        url('../fonts/gothamhtf-medium-webfont.ttf') format('truetype'),
+        url('../fonts/gothamhtf-medium-webfont.svg#gotham_htfmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'GothamNarrow-Black';
+    src: url('../fonts/GothamNarrow-Black.eot?#iefix') format('embedded-opentype'),  url('../fonts/GothamNarrow-Black.otf')  format('opentype'),
+        url('../fonts/GothamNarrow-Black.woff') format('woff'), url('../fonts/GothamNarrow-Black.ttf')  format('truetype'), url('../fonts/GothamNarrow-Black.svg#GothamNarrow-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

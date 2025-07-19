@@ -1,0 +1,200 @@
+/*!
+ * Media element.
+ */
+.mejs-container.mejs-audio,
+.mejs-container.mejs-video {
+    background-color: transparent;
+
+    .entry-content & {
+        margin-bottom: 1.333em;
+    }
+
+    * {
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    .mejs-controls {
+        background-color: $color-white;
+        border: 1px solid transparent;
+        height: 50px;
+
+        > :first-child {
+            margin-left: 9px;
+        }
+
+        > :last-child {
+            margin-right: 9px;
+        }
+
+        .mejs-time {
+            margin-top: 9px;
+            color: inherit;
+        }
+
+        .mejs-time-rail {
+            margin-top: 9px;
+            padding-top: 9px;
+
+            .mejs-time-total,
+            .mejs-time-loaded,
+            .mejs-time-current {
+                height: 3px;
+            }
+
+            .mejs-time-total {
+                background-color: fade($color-black, 10%);
+            }
+
+            .mejs-time-loaded {
+                background-color: fade($color-black, 15%);
+            }
+
+            .mejs-time-current {
+                background-color: $color;
+            }
+
+            .mejs-time-float {
+                background-color: $color-divider;
+                border-color: $color-black;
+
+                .mejs-time-float-corner {
+                    &:before,
+                    &:after {
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        border: 5px solid transparent;
+                        border-top-color: $color-black;
+                        position: absolute;
+                        top: -5px;
+                        left: -5px;
+                        z-index: 100
+                    }
+                    &:after {
+                        border-width: 4px;
+                        border-top-color: $color-divider;
+                        left: -4px;
+                    }
+                }
+            }
+        }
+
+        .mejs-horizontal-volume-slider {
+            margin-top: 9px;
+            margin-left: 2px;
+
+            .mejs-horizontal-volume-total,
+            .mejs-horizontal-volume-current {
+                height: 3px;
+                top: 14px;
+            }
+
+            .mejs-horizontal-volume-total {
+                background-color: fade($color-black, 10%);
+            }
+
+            .mejs-horizontal-volume-current {
+                background-color: $color;
+            }
+        }
+
+        .mejs-button {
+            button {
+                background-image: url("../images/controls.png");
+
+                &:focus {
+                    outline: 0;
+                }
+
+                .svg & {
+                    background-image: url("../images/controls.svg");
+                }
+            }
+
+            &.mejs-playpause-button {
+                margin-top: 9px;
+            }
+
+            &.mejs-fullscreen-button {
+                margin-top: 9px;
+            }
+
+            &.mejs-volume-button {
+                margin-top: 9px;
+
+                .mejs-volume-slider {
+                    top: -7.75rem;
+                }
+            }
+        }
+    }
+}
+
+/*!
+ * Media element.
+ */
+.mejs-container.mejs-audio {
+    background-color: transparent;
+    height: 50px !important;
+
+    .mejs-controls {
+        border: 1px solid $color-divider;
+    }
+}
+
+/*!
+ * Media element video.
+ */
+.mejs-container.mejs-video {
+    .mejs-overlay-button {
+        background: $color-white url('../images/play.png') no-repeat center !important;
+        border-radius: 50%;
+        display: none;
+        font-size: 24px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        margin: -30px 0 0 -30px;
+        text-align: center;
+
+        .svg & {
+            background-image: url("../images/play.svg") !important;
+        }
+    }
+
+    .mejs-controls {
+        width: auto;
+        left: map-get($gutters, xsmall);
+        bottom: map-get($gutters, xsmall);
+        right: map-get($gutters, xsmall);
+
+        @media (min-width: map-get($breakpoints, small)) {
+            left: map-get($gutters, small);
+            bottom: map-get($gutters, small);
+            right: map-get($gutters, small);
+        }
+
+        @media (min-width: map-get($breakpoints, medium)) {
+            left: map-get($gutters, medium);
+            bottom: map-get($gutters, medium);
+            right: map-get($gutters, medium);
+        }
+
+        @media (min-width: map-get($breakpoints, large)) {
+            left: map-get($gutters, large);
+            bottom: map-get($gutters, large);
+            right: map-get($gutters, large);
+        }
+    }
+}
+
+@media(min-width: map-get($breakpoints, small)) {
+    .mejs-container.mejs-video {
+        .mejs-overlay-button {
+            display: block;
+        }
+    }
+}

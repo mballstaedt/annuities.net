@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'arial-reg';
+    src: url(../fonts/arial-reg.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+.fs18{font-size:18px;}

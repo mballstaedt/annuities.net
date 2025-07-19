@@ -1,0 +1,167 @@
+.incredibbble {
+    box-sizing: border-box;
+}
+
+.incredibbble *, .incredibbble *:before, .incredibbble *:after {
+    box-sizing: inherit;
+}
+
+.incredibbble .clearfix:before, .incredibbble .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.incredibbble .clearfix:after {
+    clear: both;
+}
+
+.incredibbble .hidden {
+    display: none;
+}
+
+.incredibbble .shown {
+    display: block;
+}
+
+.incredibbble-field {
+    border-bottom: 1px solid #EEEEEE;
+    display: table;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.incredibbble-field:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.incredibbble-field-header,
+.incredibbble-field-content {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.incredibbble-field-header {
+    padding-right: 20px;
+    width: 240px;
+}
+
+.incredibbble-field-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.incredibbble-field-subtitle {
+    display: block;
+    margin-top: 5px;
+}
+
+.incredibbble-field-description {
+    display: block;
+    margin: 10px 0 0;
+}
+
+.incredibbble-control {
+    border-radius: 2px;
+    margin: 0;
+    width: 100%;
+    line-height: 20px;
+}
+
+input[type="file"].incredibbble-control {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+    line-height: 1;
+    outline: 0;
+    padding: 4px;
+    -webkit-transition: 50ms border-color ease-in-out;
+    transition: 50ms border-color ease-in-out;
+}
+
+input[type="radio"].incredibbble-control + label {
+    vertical-align: top;
+}
+
+input[type="checkbox"].incredibbble-control + label {
+    vertical-align: top;
+}
+
+input[type="color"].incredibbble-control {
+    width: 50px;
+}
+
+.incredibbble-checkbox-list,
+.incredibbble-radio-list {
+    margin: 0;
+}
+
+.incredibbble .wp-picker-container {
+    box-sizing: initial;
+}
+
+.incredibbble .wp-picker-container .wp-color-result {
+    margin: 0;
+}
+
+.incredibbble-input-group {
+    display: table;
+    width: 100%;
+}
+
+.incredibbble-input-group .incredibbble-control,
+  .incredibbble-input-group .input-group-addon {
+    border-radius: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.incredibbble-input-group .incredibbble-control:first-child,
+    .incredibbble-input-group .input-group-addon:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.incredibbble-input-group .incredibbble-control:last-child,
+    .incredibbble-input-group .input-group-addon:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.incredibbble-input-group .input-group-addon {
+    width: 1%;
+}
+
+.incredibbble-input-group .input-group-addon .button {
+    border-radius: 0;
+}
+
+.incredibbble-input-group .input-group-addon:first-child .button {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.incredibbble-input-group .input-group-addon:last-child .button {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.incredibbble-input-group .button {
+    box-shadow: none;
+}
+
+.incredibbble-image-thumbnail {
+    max-width: 100%;
+}
+
+.incredibbble-image-thumbnail img {
+    border: 1px solid #DDDDDD;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 10px;
+    max-width: 100%;
+}

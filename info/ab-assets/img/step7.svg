@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g id="Grupo_33" data-name="Grupo 33" transform="translate(-137 -255)">
+    <circle id="Elipse_4" data-name="Elipse 4" cx="60" cy="60" r="60" transform="translate(137 255)" fill="#dbebff"/>
+    <g id="smartphone-2" transform="translate(160 277.664)">
+      <path id="Trazado_47" data-name="Trazado 47" d="M48.626,1H23.893A9.9,9.9,0,0,0,14,10.893V67.778a9.9,9.9,0,0,0,9.893,9.893H48.626a9.9,9.9,0,0,0,9.893-9.893V10.893A9.9,9.9,0,0,0,48.626,1ZM16.473,13.366H56.046V60.358H16.473Zm7.42-9.893H48.626a7.427,7.427,0,0,1,7.42,7.42H16.473a7.427,7.427,0,0,1,7.42-7.42ZM48.626,75.2H23.893a7.427,7.427,0,0,1-7.42-7.42V62.832H56.046v4.947A7.427,7.427,0,0,1,48.626,75.2Z" transform="translate(0)" fill="#1a3a68" stroke="#1a3a68" stroke-width="0.2"/>
+      <path id="Trazado_48" data-name="Trazado 48" d="M32.71,53a3.71,3.71,0,1,0,3.71,3.71A3.71,3.71,0,0,0,32.71,53Zm0,4.947a1.237,1.237,0,1,1,1.237-1.237A1.237,1.237,0,0,1,32.71,57.947Z" transform="translate(3.55 12.305)" fill="#1a3a68" stroke="#1a3a68" stroke-width="0.2"/>
+      <path id="Trazado_49" data-name="Trazado 49" d="M36.656,5h-7.42a1.237,1.237,0,0,0,0,2.473h7.42a1.237,1.237,0,0,0,0-2.473Z" transform="translate(3.313 0.947)" fill="#1a3a68" stroke="#1a3a68" stroke-width="0.2"/>
+    </g>
+  </g>
+</svg>

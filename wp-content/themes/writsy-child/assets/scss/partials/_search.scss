@@ -1,0 +1,13 @@
+/*!
+ * Search form.
+ */
+.search-form {
+    .input {
+        background: #FFFFFF url('../images/search.png') no-repeat center right;
+        padding-right: 36px;
+
+        .svg & {
+            background-image: url("../images/search.svg");
+        }
+    }
+}

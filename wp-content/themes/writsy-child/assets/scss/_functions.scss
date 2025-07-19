@@ -1,0 +1,9 @@
+// Strip units
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+// Fade color
+@function fade($color, $weight: 100%) {
+    @return rgba($color, strip-unit($weight / 100));
+}

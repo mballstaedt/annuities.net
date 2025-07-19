@@ -1,0 +1,16 @@
+{
+  "name": "incredibbble",
+  "description": "The incredibbble WordPress theme framework.",
+  "main": "index.php",
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "https://incredibbble.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

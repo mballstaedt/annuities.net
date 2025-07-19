@@ -1,0 +1,28 @@
+/*!
+ * Archive header.
+ */
+.archive-header {
+    background-color: $color-white;
+    border: 1px solid $color-divider;
+    margin-bottom: map-get($gutters, xsmall);
+    padding: 14px map-get($gutters, xsmall);
+
+    @media(min-width: map-get($breakpoints, small)) {
+        margin-bottom: map-get($gutters, small);
+        padding: 18px map-get($gutters, small);
+    }
+
+    @media(min-width: map-get($breakpoints, medium)) {
+        margin-bottom: map-get($gutters, medium);
+        padding: 18px map-get($gutters, medium);
+    }
+
+    @media(min-width: map-get($breakpoints, large)) {
+        margin-bottom: map-get($gutters, large);
+        padding: 18px map-get($gutters, large);
+    }
+
+    .archive-title {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,99 @@
+// Grid item size.
+@mixin grid-item-size($size, $total) {
+    width: percentage($size / $total);
+}
+
+// Pushed grid item.
+@mixin grid-item-push($size, $total) {
+    left: if($size > 0, percentage($size / $total), auto);
+}
+
+// Pulled grid item.
+@mixin grid-item-pull($size, $total) {
+    right: if($size > 0, percentage($size / $total), auto);
+}
+
+// Offset grid item.
+@mixin grid-item-offset($size, $total) {
+    margin-left: percentage($size / $total);
+}
+
+// Grid items
+@mixin grid-items($key, $columns: 12) {
+    @for $i from 1 through $columns {
+        .column-#{$key}-#{$i} {
+            @include grid-item-size($i, $columns);
+        }
+    }
+
+    @for $i from 1 through $columns {
+        .column-#{$key}-push-#{$i} {
+            @include grid-item-push($i, $columns);
+        }
+    }
+
+    @for $i from 1 through $columns {
+        .column-#{$key}-pull-#{$i} {
+            @include grid-item-pull($i, $columns);
+        }
+    }
+
+    @for $i from 1 through $columns {
+        .column-#{$key}-offset-#{$i} {
+            @include grid-item-offset($i, $columns);
+        }
+    }
+}
+
+// Input placeholder.
+@mixin placeholder($color: gray) {
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+
+    &::-moz-placeholder {
+        color: $color;
+        opacity: 1;
+    }
+
+    &:-moz-placeholder {
+        color: $color;
+        opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+}
+
+// Ellipsis.
+@mixin ellipsis() {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// Line clamping.
+@mixin clamp($lines: 2, $line-height: $line-height) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+    max-width: 100%;
+    max-height: ($line-height * $lines) - $lines;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// Clearing.
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    
+    &:after {
+        clear: both;
+    }
+}

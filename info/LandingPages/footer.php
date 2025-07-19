@@ -1,0 +1,168 @@
+<div class="about-annuity">
+
+    <div class="p-main-text-box">
+
+        <div class="p-main-text-main-heading">------------------ More Information about Annuities ------------------</div>
+
+    </div>
+
+    <div class="p-main-text-box">
+
+        <div class="left-div">
+
+            <img  height="75px" width="75px" alt="certified" src="images/CoinTree1.jpg">
+
+        </div>
+
+        <div class="right-div">
+
+            <div class="p-main-text-heading">What exactly is an Annuity?</div>
+
+            <div class="p-main-text-decription">
+
+                An annuity is an investment product that provides safe, tax-deferred growth of your
+
+                retirement nest egg. Annuities are considered low-risk, and can provide guaranteed, monthly income when
+
+                you retire. There are many types of annuities with varying features & benefits. These include: fixed,
+
+                variable, immediate, deferred & hybrid. We strongly suggest you consult with a financial professional to
+
+                help you understand the various types of annuities before you purchase.
+
+            </div>
+
+        </div>
+
+        <div class="clr"></div>
+
+    </div>
+
+    <div class="p-main-text-box">
+
+        <div class="left-div">
+
+            <img height="75px" width="75px" alt="certified" src="images/NestEgg-dollars.jpg">
+
+        </div>
+
+        <div class="right-div">
+
+            <div class="p-main-text-heading">Is an Annuity Right for You?</div>
+
+            <div class="p-main-text-decription">
+
+                Annuities are NOT a good fit for everyone. Annuities are designed for people looking for
+
+                guaranteed, monthly income when they retire - they are NOT a high-risk / high-return investment. They
+
+                are considered to be in the mainstream of conservative retirement planning - over $225 billion in
+
+                annuities have been purchased in the past 12 months alone!
+
+            </div>
+
+        </div>
+
+        <div class="clr"></div>
+
+    </div>
+
+    <div class="p-main-text-box">
+
+        <div class="left-div">
+
+            <img height="75px" width="75px" alt="certified" src="images/About-Us green.jpg">
+
+        </div>
+
+        <div class="right-div">
+
+            <div class="p-main-text-heading">Who is Annuities.net?</div>
+
+            <div class="p-main-text-decription">
+
+                For years, Annuities.net has provided objective, unbiased annuity information to consumers
+
+                interested in making the right choices with their retirement savings. We do NOT sell annuities or any
+
+                other financial products or services, and we are NOT affiliated with any other company. Our job is to
+
+                answer questions on as wide a range of annuity topics as possible, and provide free annuity quotes to
+
+                consumers who feel an annuity might be the right fit for them.
+
+            </div>
+
+        </div>
+
+        <div class="clr"></div>
+
+    </div>
+
+    <div class="p-main-text-box">
+
+        <div class="left-div">
+
+            <img  height="75px" width="75px" alt="certified" src="images/blocks1-2-3.jpg">
+
+        </div>
+
+        <div class="right-div">
+
+            <div class="p-main-text-heading">What are your Next Steps?</div>
+
+            <div class="p-main-text-decription">
+
+                The first thing to do is to see if an annuity fits your specific profile and financial
+
+                situation. This "fit" is based on the amount of retirement savings you currently have, how old you are,
+
+                and the State you live in. Simply fill in the information above and our system will generate a free,
+
+                tailor-made Annuity Report that will include annuity rate quotes from A+ rated companies in your area.
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="clr"></div>
+
+</div>
+
+<?php require_once "common_popup.php"; ?>
+
+</div>
+
+</div>
+
+<?php renderLPScripts($scriptsData, $htmlTagName = 'body_tag'); ?>
+
+</body>
+
+</html>
+
+<script>
+
+    function pop_ups(id,is_form_privacy) {
+       is_form_privacy = is_form_privacy || false;
+        if(id == 'leads_from'){
+            ga('send', 'event', 'Landing Page', 'Click', 'About us');
+        }else if (id =='leads_from3'){
+            if(is_form_privacy){
+                ga('send', 'event', 'Landing Page', 'Click', 'Form Privacy');
+            }else {
+                ga('send', 'event', 'Landing Page', 'Click', 'Privacy Policy');
+            }
+        }else if (id == 'leads_from2'){
+            ga('send', 'event', 'Landing Page', 'Click', 'Terms of Use');
+        }
+        $.facebox($('#' + id).html());
+
+    }
+
+    setScreenResolution();
+
+</script>

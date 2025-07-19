@@ -1,0 +1,33 @@
+/*!
+ * Social buttons
+ */
+.social-buttons {
+    list-style: none;
+    margin: 0;
+    padding: 0 ;
+    @include clearfix();
+
+    .widget & {
+        text-align: center;
+        margin-bottom: -8px !important;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0;
+        margin: 0 5px 8px 0;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            padding: 0;
+            text-align: center;
+            width: 40px;
+        }
+    }
+}

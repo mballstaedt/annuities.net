@@ -1,0 +1,105 @@
+/*!
+ * Floats
+ */
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+/*!
+ * Text alignments
+ */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/*!
+ * WordPress Image alignments
+ */
+.alignleft {
+    float: left;
+    margin: 0.375em $grid-gutter 1.333em 0;
+}
+
+.alignright {
+    float: right;
+    margin: 0.375em 0 1.333em $grid-gutter;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto 1.333em auto;
+}
+
+/*!
+ * Conditional text.
+ */
+.text-primary {
+    font-family: $font-primary;
+}
+
+.text-secondary {
+    font-family: $font-secondary;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+}
+
+.text-lead {
+    font-size: 20px;
+}
+
+/*!
+ * Clearing
+ */
+.clearfix {
+    @include clearfix();
+}
+
+/*!
+ * WP caption
+ */
+.wp-caption {
+    text-align: center;
+
+    .wp-caption-text {
+        font-style: italic;
+        margin-top: 10px;
+    }
+}
+
+/*!
+ * Screen reader text.
+ */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+/*!
+ * Fade-in animation.
+ */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

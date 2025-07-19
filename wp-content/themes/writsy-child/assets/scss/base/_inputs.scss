@@ -1,0 +1,55 @@
+/*!
+ * Inputs
+ */
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="text"],
+input[type="url"],
+select,
+textarea,
+.input {
+    background-color: $color-white;
+    border: 1px solid $color-divider;
+    border-radius: 0;
+    color: $color;
+    display: block;
+    font-size: $font-size;
+    letter-spacing: 0.05em;
+    line-height: $line-height;
+    padding: 7px 12px;
+    vertical-align: middle;
+    width: 100%;
+
+    &:focus {
+        border-color: darken($color-divider, 10%);
+        outline: 0;
+    }
+}
+
+select {
+    background: $color-white url('../images/select.png') no-repeat center right;
+    cursor: pointer;
+    padding-right: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    .svg & {
+        background-image: url("../images/select.svg");
+    }
+}
+
+.input-large {
+    font-size: 20px !important;
+    padding: 10px 15px !important;
+}
+
+@at-root {
+    @include placeholder(lighten($color, 55%));
+}

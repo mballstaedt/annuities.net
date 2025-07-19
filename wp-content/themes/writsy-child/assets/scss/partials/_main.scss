@@ -1,0 +1,40 @@
+/*!
+ * Main content
+ */
+.main-content {
+    padding: 0 0 map-get($gutters, xsmall) * 2 0;
+
+    @media (min-width: map-get($breakpoints, small)) {
+        padding-bottom: map-get($gutters, small) * 2;
+    }
+
+    @media (min-width: map-get($breakpoints, medium)) {
+        padding-bottom: map-get($gutters, medium) * 2;
+
+        .widget-area {
+            padding-left: map-get($gutters, medium);
+        }
+        
+        &.sidebar-left {
+             .widget-area {
+                padding-left: 0;
+                padding-right: map-get($gutters, medium);
+            }
+        }
+    }
+
+    @media (min-width: map-get($breakpoints, large)) {
+        padding-bottom: map-get($gutters, large) * 2;
+
+        .widget-area {
+            padding-left: map-get($gutters, medium);
+        }
+        
+        &.sidebar-left {
+             .widget-area {
+                padding-left: 0;
+                padding-right: map-get($gutters, large);
+            }
+        }
+    }
+}

@@ -1,0 +1,151 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13 Apr, 2015, 6:44:04 PM
+    Author     : jitendra
+*/
+@media (min-width:1025px) {
+	.hiddenMidium {display:none;}
+	.hiddenSmall {display:block;}
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .container{ width: 95%;}
+    .navbar-header{width: 27%;}
+    .navbar-brand > img{ width: 100%;}
+    /*.navbar-brand{width: 50%;}*/
+    .navbar-default .navbar-nav > li > a {
+        border-right: 1px solid #dedede;
+        color: #444444;
+        display: block;
+        font: 14px/1.2 "gotham_htfmedium";
+        letter-spacing: -1px;
+        padding: 30px 9px;
+        text-transform: uppercase;
+    }
+
+    /*.navbar-right, .navbar-header{ float: none !important;}*/
+    /*.navbar-nav{border-top: 1px solid #dedede; text-align: center;}*/
+    #banner h3 span{font-size: 21px;}
+    #banner h3 img{ width: 20%;}
+	.hiddenMidium {display:none;}
+	.hiddenSmall {display:block;}
+	
+    #banner h3{font-size: 20px;}
+    #frm-container{width: 100%; top: 10px;}
+    #frm-container h4{font-size: 15px;}
+    #frm-container input[type="submit"]{ width: 100%;}
+
+    #banner h1{font-size: 43px; margin: 15px 0;}
+    #banner{font-size: 18px;}
+    #frm-container input[type="text"], #frm-container select{
+        padding: 5px 57px 5px 10px;
+        width: 100%;
+        font-size: 15px;
+    }
+    #banner{height: 690px;}
+    #application-area ul li{font-size: 16px;}
+    #application-area ul{margin-top: 40px;}
+    .bottom-bg-2 h1{font-size: 21px;}
+
+    #color-img h1, #image-gallery h1{font-size: 37px;}
+    #color-img #content p{ font-size: 15px;}
+    #color-img{background-size: 100%; height: 492px;}
+    #testimonial .testimonial-box p{font-size: 13px;}
+
+    #gap{height: 80px;}
+}
+
+@media (max-width: 767px){
+    .navbar-brand{padding: 0;}
+    #banner #left-content{ margin-top: 0; left: 20px; top: 132px;}
+    #banner{height: auto; background: none;}
+    #frm-container{width: 100%; top: 0; margin:20px 0; border-color: #dedede;}
+    #banner h1{ font-size: 39px;}
+    #left-content p{font-size: 16px;}
+
+    #gap{height: 60px;}
+
+    #banner .bottom-bg{position: relative;}
+    #banner .bottom-bg h2{ text-align: center;}
+    #banner .bottom-bg img{ margin: 15px auto;}
+	.hiddenMidium {display:none;}
+	.hiddenSmall {display:block;}
+
+    #left-content{ margin: 0; position: absolute;}
+    .navbar-default .navbar-nav > li > a{padding: 8px 12px;}
+    #benefits{background: none;}
+
+    #application-area ul li{float: none; width: 100%; font-size: 13px;}
+    #application-area ul{margin-top: 20px;}
+    .bottom-bg-2{background-image: none; margin-bottom: 30px; height: auto;}
+    #color-img{background-image: none; height: auto;}
+    #color-img #content{float: none; width: 100%;}
+
+    #color-img h1, #image-gallery h1{font-size: 30px;}
+    #image-gallery{padding-top: 20px;}
+    #image-gallery p{padding: 0; font-size: 13px;}
+    #benefits #icons-sec h2{margin-bottom: 12px;}
+    #testimonial h1{font-size: 30px;}
+    #testimonial p{font-size: 14px;}
+    #testimonial .testimonial-box p{font-size: 13px;}
+    #last-section h1{font-size: 30px;}
+
+    #testimonial{margin: 30px 0;}
+    .bottom-bg-2 h1{font-size: 23px; text-align: center; margin-bottom: 10px;}
+}
+
+@media (max-width: 480px){
+    .container{ width: 90%;}
+    /*    .navbar-header{width: 80%;}
+        .navbar-brand > img{ width: 100%;}*/
+
+    #banner h1{font-size: 27px;}
+    #banner #left-content{margin: 0; top:60px; left: 10px;}
+    #left-content p{ font-size: 14px;}
+    #banner h2{font-size: 22px;}
+
+    .navbar-brand{padding: 0;}
+
+    .navbar-brand {
+        float: left;
+        font-size: 18px;
+        height: auto;
+        padding: 9px;
+        width: 48%;
+    }
+    #sm-banner{ margin-bottom: 10px;}
+	.hiddenMidium {display:block;}
+	.hiddenSmall {display:none;}
+    #banner h3 span{ font-size: 24px;}
+    /*#banner h3 img{ width: 24%;}*/
+    #frm-container h4{font-size: 14px;}
+    #frm-container input[type="submit"]{width: 100%;}
+    #banner .bottom-bg{margin-top: 15px;}
+
+    #benefits h1{font-size: 28px;}
+    #benefits p{font-size: 15px;}
+    #benefits #icons-sec h2{font-size: 12px;}
+
+    #application-area h1{font-size: 29px;}
+    #application-area h3{font-size: 14px; padding: 0;}
+
+    #application-area ul{padding: 0;}
+    #application-area ul li{float: none; padding: 4px 4px 4px 25px;}
+    .bottom-bg-2 h1{font-size: 16px; margin-bottom: 10px;}
+
+    #content p{ font-size: 14px;}
+    .bottom-bg-2 h1{text-align: center;}
+    #last-section h1{font-size: 21px;}
+    #last-section #frm-container{width: 100%;}
+    #frm-container input[type="submit"]{background-size: 100%;}
+    footer{font-size: 13px;}
+	footer{ margin-top:20px;}
+}
+
+@media (max-width: 360px){
+    #banner h3 img{ width: 23%;}
+}

@@ -1,0 +1,446 @@
+
+/*!
+ * Widgets
+ */
+.widget {
+    margin-bottom: map-get($gutters, xsmall) * 2;
+    text-align: center;
+    @include clearfix();
+
+    @media (min-width: map-get($breakpoints, small)) {
+        margin-bottom: map-get($gutters, small) * 2;
+    }
+
+    @media (min-width: map-get($breakpoints, medium)) {
+        margin-bottom: map-get($gutters, medium) * 2;
+    }
+
+    @media (min-width: map-get($breakpoints, large)) {
+        margin-bottom: map-get($gutters, large) * 2;
+    }
+
+    .sidebar & {
+        background-color: $color-white;
+        border: 1px solid $color-divider;
+        padding: map-get($gutters, xsmall);
+
+        @media (min-width: map-get($breakpoints, small)) {
+            padding: map-get($gutters, small);
+        }
+
+        @media (min-width: map-get($breakpoints, medium)) {
+            padding: map-get($gutters, medium);
+        }
+
+        @media (min-width: map-get($breakpoints, large)) {
+            padding: map-get($gutters, large);
+        }
+    }
+
+    p, ul, ol, table, form {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    ul, ol {
+        text-align: left;
+
+        &:not([class]), &.menu, &.sub-menu {
+            padding-left: 18px;
+
+            li {
+                margin-bottom: 5px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+
+                    &:hover,
+                    &:focus {
+                        color: $color-accent;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.widget-title, .striketrough-heading {
+    font-weight: 500;
+
+    span {
+        padding: 0 8px;
+        position: relative;
+        z-index: 1;
+
+        &, &:before {
+            display: inline-block;
+        }
+        
+        &:before {
+            background-color: $color-accent;
+            content: '';
+            height: 3px;
+            opacity: 0.5;
+            position: absolute;
+            top: 50%; left: 0;
+            margin-top: -2px;
+            min-width: 100%;
+            z-index: -1;
+        }
+    }
+
+    .sidebar & {
+        border-bottom: 1px solid $color-divider;
+        margin: map-get($gutters, xsmall) * -1 map-get($gutters, xsmall) * -1 map-get($gutters, xsmall);
+        padding: 14px map-get($gutters, xsmall);
+
+        @media (min-width: map-get($breakpoints, small)) {
+            margin: map-get($gutters, small) * -1 map-get($gutters, small) * -1 map-get($gutters, small);
+            padding: 14px map-get($gutters, small);
+        }
+
+        @media (min-width: map-get($breakpoints, medium)) {
+            argin: map-get($gutters, medium) * -1 map-get($gutters, medium) * -1 map-get($gutters, medium);
+            padding: 14px map-get($gutters, medium);
+        }
+
+        @media (min-width: map-get($breakpoints, large)) {
+            margin: map-get($gutters, large) * -1 map-get($gutters, large) * -1 map-get($gutters, large);
+            padding: 18px map-get($gutters, large);
+        }
+    }
+}
+
+/*!
+ * WP Calendar
+ */
+.calendar_wrap {
+    margin: -31px;
+
+    table {
+        margin-bottom: 0;
+
+        caption {
+            font-family: $font-secondary;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.125em;
+            padding: 18px 30px;
+            text-transform: uppercase;
+        }
+
+        th,
+        td {
+            border: 1px solid $color-divider;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+}
+
+/*!
+ * RSS widget
+ */
+.widget.widget_rss {
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            margin-bottom: 20px;
+
+            .rsswidget {
+                font-weight: 600;
+            }
+
+            .rss-date {
+                font-style: italic;
+            }
+
+            .rssSummary {
+                margin-top: 10px;
+            }
+
+            cite {
+                display: inline-block;
+                font-weight: 600;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+
+/*!
+ * Tag cloud widget.
+ */
+.tagcloud {
+    a {
+        background-color: #FFFFFF;
+        border: 1px solid $color-divider;
+        color: $color;
+        display: inline-block;
+        padding: 2px 12px;
+        text-decoration: none;
+        margin-bottom: 4px;
+
+        &:hover,
+        &:focus {
+            background-color: $color;
+            border-color: $color;
+            color: $color-accent;
+        }
+    }
+}
+
+/*!
+ * Newsletter widget.
+ */
+.widget_mc4wp_form_widget {
+    form p {
+        margin-bottom: map-get($gutters, xsmall) / 2;
+
+        @media (min-width: map-get($breakpoints, small)) {
+            margin-bottom: map-get($gutters, small) / 2;
+        }
+
+        @media (min-width: map-get($breakpoints, medium)) {
+            margin-bottom: map-get($gutters, medium) / 2;
+        }
+
+        @media (min-width: map-get($breakpoints, large)) {
+            margin-bottom: map-get($gutters, large) / 2;
+        }
+    }
+}
+
+/*!
+ * Twitter feeds widget.
+ */
+.tweets {
+    .tweet_user {
+        display: none;
+    }
+
+    .tweet_time {
+        display: block;
+        font-style: italic;
+        margin-top: 10px;
+        text-transform: capitalize;
+    }
+
+    .slick-dots {
+        margin-top: 20px;
+
+        > li {
+            margin-right: 6px;
+            
+            > * {
+                width: 6px;
+                height: 6px;
+            }
+        }
+    }
+}
+
+/*!
+ * Instagram feeds widget.
+ */
+.instagram-feeds {
+    margin: -1px;
+
+    .instagram-feed {
+        float: left;
+        padding: 1px;
+        width: 33.333%;
+
+        a, img {
+            display: block;
+        }
+    }
+}
+
+/*!
+ * Posts list.
+ */
+.posts-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+
+    .posts-list-item {
+        margin-bottom: map-get($gutters, xsmall);
+        @include clearfix();
+
+        @media (min-width: map-get($breakpoints, small)) {
+            margin-bottom: map-get($gutters, small);
+        }
+
+        @media (min-width: map-get($breakpoints, medium)) {
+            margin-bottom: map-get($gutters, medium);
+        }
+
+        @media (min-width: map-get($breakpoints, large)) {
+            margin-bottom: map-get($gutters, large);
+        }
+    }
+
+    .posts-list-item-thumbnail {
+        background-color: $color-divider;
+        display: block;
+        float: left;
+        width: 70px;
+        position: relative;
+    }
+
+    .posts-list-item-content {
+        margin-left: 90px;
+    }
+
+    .posts-list-item-title {
+        font-weight: 500;
+        margin-bottom: 5px;
+        @include clamp(2, $line-height-fixed);
+
+        a {
+            color: inherit;
+            text-decoration: none;
+
+            &:hover,
+            &:focus {
+                color: $color-accent;
+            }
+        }
+    }
+
+    .posts-list-item-meta {
+        font-style: italic;
+    }
+
+    &.posts-list-vertical {
+        .posts-list-item-thumbnail {
+            float: none;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .posts-list-item-content {
+            margin-left: 0;
+        }
+    }
+
+    &:not(.posts-list-vertical) {
+        .posts-list-item {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/*!
+ * Related posts.
+ */
+.related-posts {
+    border: 1px solid $color-divider;
+    padding: 0 map-get($gutters, xsmall);
+
+    .related-posts-header {
+        border-bottom: 1px solid $color-divider;
+        margin: 0 map-get($gutters, xsmall) * -1 map-get($gutters, xsmall);
+        padding: 14px map-get($gutters, xsmall);
+        position: relative;
+    }
+
+    .related-posts-title {
+        margin-bottom: 0;
+    }
+
+    .slick-next {
+        right: 5px;
+    }
+
+    .slick-prev {
+        left: 5px;
+    }
+
+    @media (min-width: map-get($breakpoints, small)) {
+        padding: 0 map-get($gutters, small);
+
+        .related-posts-header {
+            margin: 0 map-get($gutters, small) * -1 map-get($gutters, small);
+            padding: 14px map-get($gutters, small);
+        }
+    }
+
+    @media (min-width: map-get($breakpoints, medium)) {
+        padding: 0 map-get($gutters, medium);
+
+        .related-posts-header {
+            margin: 0 map-get($gutters, medium) * -1 map-get($gutters, medium);
+            padding: 14px map-get($gutters, medium);
+        }
+    }
+
+    @media (min-width: map-get($breakpoints, large)) {
+        padding: 0 map-get($gutters, large);
+
+        .related-posts-header {
+            margin: 0 map-get($gutters, large) * -1 map-get($gutters, large);
+            padding: 14px map-get($gutters, large);
+        }
+
+        .slick-next {
+            right: 10px;
+        }
+
+        .slick-prev {
+            left: 10px;
+        }
+    }
+}
+
+/*!
+ * Recommended posts.
+ */
+.recommended-posts {
+    background-color: transparent;
+    // margin-top: map-get($gutters, xsmall) * 2;
+
+    .recommended-posts-title {
+        font-weight: $heading-font-weight;
+        margin-bottom: map-get($gutters, xsmall) + 10;
+        margin-top: 0;
+    }
+
+    @media (min-width: map-get($breakpoints, small)) {
+        // margin-top: map-get($gutters, small) * 2;
+
+        .recommended-posts-title {
+            margin-bottom: map-get($gutters, small) + 10;
+        }
+    }
+
+    @media (min-width: map-get($breakpoints, medium)) {
+        // margin-top: map-get($gutters, medium) * 2;
+
+        .recommended-posts-title {
+            margin-bottom: map-get($gutters, medium) + 10;
+        }
+    }
+
+    @media (min-width: map-get($breakpoints, large)) {
+        // margin-top: map-get($gutters, large) * 2;
+
+        .recommended-posts-title {
+            margin-bottom: map-get($gutters, large) + 10;
+        }
+    }
+}

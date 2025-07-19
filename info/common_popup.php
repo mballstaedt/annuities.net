@@ -1,0 +1,309 @@
+<!-- Please try to write CSS here as it's common for LP and TYP -->
+
+<style>
+
+    .center{
+
+        text-align: center;
+
+    }
+
+    .footer-decription{
+
+        font-size: 12px;
+
+        padding-left: 190px;
+
+        text-align: center;
+
+        width: 73%;
+
+        color: #a6a6a6;
+
+        margin-bottom: 10px;
+
+    }
+
+    .p-footer-main {
+
+        text-align: center;
+
+    }
+
+    .common{
+
+        display: inline-block;
+
+        float: none;
+
+        margin-left: 15px;
+
+    }
+
+</style>
+
+<div class="p-container bn">
+
+    <div class="p-footer-main">
+
+            <div class="common gd">
+
+                <span id="siteseal"><script type="text/javascript"
+
+                                            src="<?php echo HTTP_PREFIX_STR; ?>seal.godaddy.com/getSeal?sealID=YlXxglW9fKlWAxpg2moWVxOr5hdsrKyvDXHSQWPYJ9zopBip0TrJX3Z134"></script></span>
+
+            </div>
+
+            <div class="common"><img height="33px" width="80px"
+
+                                            src="<?php echo $global['home_link'] ?>images/certified.png"/></div>
+
+            <div class="common"><img src="<?php echo $global['home_link'] ?>images/sitelock.png"/></div>
+
+    </div>
+
+    <div class="footer-decription">
+
+        Disclaimer: This is not investment advice. All information on this site is intended for educational purposes
+
+        only. We are not liable
+
+        for any potential damages that may be incurred from this information. Always consult a licensed financial
+
+        professional before investing.
+
+    </div>
+
+    <hr>
+
+    <div class="center">
+
+        <div class="p-footer-navigation">
+
+            <ul>
+
+                <li><a href="javascript:void(0);" onClick="pop_ups('leads_from');">About us </a></li>
+
+<!--                <li><a href="javascript:void(0);" onClick="pop_ups('leads_from4');">Contact Us</a></li>-->
+
+                <li><a href="javascript:void(0);" onClick="pop_ups('leads_from3');">Privacy Policy </a></li>
+
+                <li><a href="javascript:void(0);" onClick="pop_ups('leads_from2');">Terms of Use</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="p-copy-right">&copy; <?php echo date("Y"); ?> Annuities.net . All Rights Reserved.</div>
+
+    </div>
+
+</div>
+
+<div class="for-popup">
+
+    <div id="leads_from" style="display:none;">
+
+        <div class="popup-inner-cont">
+
+
+
+            <div class="p-heading-pop">About Us</div>
+
+            <div class="p-text-pop">
+
+                <p> For years, Annuities.net has provided objective, unbiased annuity information to consumers
+
+                    interested in making the right choices with their retirement savings. We do NOT sell annuities or any
+
+                    other financial products or services, and we are NOT affiliated with any other company. Our job is to
+
+                    answer questions on as wide a range of annuity topics as possible, and provide free annuity quotes to
+
+                    consumers who feel an annuity might be the right fit for them.
+
+                </p>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <div id="leads_from2" style="display:none;">
+
+        <div class="popup-inner-cont">
+
+
+
+            <div class="p-heading-pop">Terms of Use</div>
+
+            <div class="p-text-pop">
+
+                <p>
+
+                    Fill out our fast and easy quote form now and receive multiple quotes from our top rated annuity
+
+                    companies. We take your privacy very seriously so your information is encrypted and stored safely in
+
+                    our secure location.
+
+                </p>
+
+
+
+                <p>
+
+                    All content, products, and software used on this website is provided "as-is". Annuities.net provides
+
+                    no warranties or representations of any kind, regardless if they are expressed or implied. We cannot
+
+                    be held liable for errors, misspellings, typos, defects, viruses, harmful software or components,
+
+                    emails, or information exchanged with this site.
+
+                </p>
+
+
+
+                <p>
+
+
+
+                    Annuities.net cannot and will not be held liable for any direct or indirect cost, liability, injury,
+
+                    damage, loss of privacy, or security flaw in any way related directly or indirectly to
+
+                    Annuities.net. Use of this website is strictly prohibited if you do not agree with the Terms of Use
+
+                    and Privacy Policy of Annuities.net . If you choose to use Annuities.net you forfeit any and all
+
+                    right to arbitration against Annuities.net.
+
+                </p>
+
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div id="leads_from3" style="display:none;">
+
+        <div class="popup-inner-cont">
+
+
+
+            <div class="p-heading-pop">Privacy Policy</div>
+
+            <div class="p-text-pop">
+
+                <p>We consider respecting a user's privacy as one of our most significant responsibilities. We created
+
+                    the following privacy policy guidelines with a fundamental respect of your right to privacy. Our
+
+                    guidelines for collecting, protecting and sharing your information you provide us during a visit to
+
+                    our website appear below.</p>
+
+
+
+                <p><b>Personally Identifiable Information:</b><br/>
+
+                    Our site uses forms for individuals to provide limited personal data for the processing of quotes.
+
+                    We collect your contact information and demographic information. All information you give us on this
+
+                    Web site is stored on our secure computer servers. Access to stored information is restricted to
+
+                    authorized personnel.</p>
+
+
+
+                <p><b>Links To Other Sites:</b><br/>
+
+                    Our site may contain links to other sites. Please note that when you click on one of these links you
+
+                    are clicking to another Web site. Annuities.net is not responsible for the privacy practices or
+
+                    content of such websites. We encourage you to read the privacy statements of these linked sites as
+
+                    their privacy policy may differ from ours.</p>
+
+
+
+                <p>
+
+                    If you choose to visit Annuities.net , your visit and any dispute over privacy is subject to this
+
+                    Policy and our Terms of Use, including limitations on damages, arbitration of disputes, and
+
+                    application of the law of the state of California. If you have any concern about privacy at
+
+                    Annuities.net , please send us a thorough description to info@Annuities.net , and we will try to
+
+                    resolve it.
+
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <div id="leads_from4" style="display:none;">
+
+        <div class="popup-inner-cont">
+
+
+
+            <div class="p-heading-pop">Contact Us</div>
+
+            <div class="p-text-pop"><p>Contact us about any questions you may have about our site, or products, and our
+
+                    company. Our toll free number is (888) 390-4132, or you can email us at: info@Annuities.net .</p>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+<script>
+
+    function pop_ups(id,is_form_privacy) {
+       is_form_privacy = is_form_privacy || false;
+        if(id == 'leads_from'){
+            ga('send', 'event', 'Landing Page', 'Click', 'About us');
+        }else if (id =='leads_from3'){
+            if(is_form_privacy){
+                ga('send', 'event', 'Landing Page', 'Click', 'Form Privacy');
+            }else {
+                ga('send', 'event', 'Landing Page', 'Click', 'Privacy Policy');
+            }
+        }else if (id == 'leads_from2'){
+            ga('send', 'event', 'Landing Page', 'Click', 'Terms of Use');
+        }
+        $.facebox($('#' + id).html());
+    }
+
+</script>

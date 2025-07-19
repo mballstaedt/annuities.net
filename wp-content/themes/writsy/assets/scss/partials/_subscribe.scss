@@ -1,0 +1,17 @@
+/*!
+ * Subscription dialog.
+ */
+.subscription {
+    > .button {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .dialog-inner {
+        width: 970px;
+
+        input {
+            text-align: center;
+        }
+    }
+}

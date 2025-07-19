@@ -1,0 +1,442 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Incredibbble\n"
+"POT-Creation-Date: 2016-05-08 04:22+0700\n"
+"PO-Revision-Date: 2016-05-08 04:22+0700\n"
+"Last-Translator: \n"
+"Language-Team: The Incredibbble <support@incredibbble.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: translate;__;_e;_n;_x;_ex;_nx;esc_attr__;esc_attr_e;"
+"esc_attr_x;esc_html__;esc_html_e;esc_html_x;_n_noop;_nx_noop\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+
+#: includes/class-incredibbble.php:484 templates/controls/audio.php:12
+#: templates/controls/image.php:12 templates/controls/video.php:12
+msgid "Open Library"
+msgstr "Open Library"
+
+#: includes/class-incredibbble.php:485
+msgid "Select Image"
+msgstr "Select Image"
+
+#: includes/class-incredibbble.php:486
+msgid "Select Video"
+msgstr "Select Video"
+
+#: includes/class-incredibbble.php:487
+msgid "Select Audio"
+msgstr "Select Audio"
+
+#: includes/class-incredibbble.php:488 templates/controls/audio.php:9
+#: templates/controls/video.php:9
+msgid "Remove"
+msgstr "Remove"
+
+#: includes/components/class-incredibbble-featured-posts.php:168
+msgid "Featured Posts"
+msgstr "Featured Posts"
+
+#: includes/components/class-incredibbble-featured-posts.php:169
+msgid "Featured posts settings."
+msgstr "Featured posts settings."
+
+#: includes/components/class-incredibbble-featured-posts.php:174
+msgid "Query Settings"
+msgstr "Query Settings"
+
+#: includes/components/class-incredibbble-featured-posts.php:180
+msgid "Display Options"
+msgstr "Display Options"
+
+#: includes/components/class-incredibbble-featured-posts.php:186
+msgid "Tag"
+msgstr "Tag"
+
+#: includes/components/class-incredibbble-featured-posts.php:187
+msgid "Featured posts tag ID."
+msgstr "Featured posts tag ID."
+
+#: includes/components/class-incredibbble-featured-posts.php:188
+msgid "Enter a tag ID to be use as tag query of your featured posts."
+msgstr "Enter a tag ID to be use as tag query of your featured posts."
+
+#: includes/components/class-incredibbble-featured-posts.php:195
+msgid "Hide Tag"
+msgstr "Hide Tag"
+
+#: includes/components/class-incredibbble-featured-posts.php:196
+msgid "Hide the tag on the front end."
+msgstr "Hide the tag on the front end."
+
+#: includes/components/class-incredibbble-featured-posts.php:197
+msgid "Check this option to hide featured tag on the front end."
+msgstr "Check this option to hide featured tag on the front end."
+
+#: includes/components/class-incredibbble-featured-posts.php:205
+msgid "Max Posts"
+msgstr "Max Posts"
+
+#: includes/components/class-incredibbble-featured-posts.php:206
+msgid "Max. number of posts to show"
+msgstr "Max. number of posts to show"
+
+#: includes/components/class-incredibbble-featured-posts.php:207
+msgid "Numeric value only, default is 5."
+msgstr "Numeric value only, default is 5."
+
+#: includes/components/class-incredibbble-instagram-feeds.php:132
+#: includes/widgets/class-incredibbble-instagram-widget.php:49
+msgid "Instagram"
+msgstr "Instagram"
+
+#: includes/components/class-incredibbble-instagram-feeds.php:138
+#: includes/components/class-incredibbble-twitter-feeds.php:176
+msgid "Access Token"
+msgstr "Access Token"
+
+#: includes/components/class-incredibbble-instagram-feeds.php:139
+msgid "Instagram Access Token"
+msgstr "Instagram Access Token"
+
+#: includes/components/class-incredibbble-instagram-feeds.php:140
+#, php-format
+msgid ""
+"Paste your Instagram access token here. Use free tool such as %s to generate "
+"your access token."
+msgstr ""
+"Paste your Instagram access token here. Use free tool such as %s to generate "
+"your access token."
+
+#: includes/components/class-incredibbble-instagram-feeds.php:147
+#: includes/components/class-incredibbble-twitter-feeds.php:194
+msgid "Cache"
+msgstr "Cache"
+
+#: includes/components/class-incredibbble-instagram-feeds.php:148
+#: includes/components/class-incredibbble-twitter-feeds.php:195
+msgid "Cache expiration"
+msgstr "Cache expiration"
+
+#: includes/components/class-incredibbble-instagram-feeds.php:149
+msgid "Please specify the cache expiration in minutes. Minimum is 5 minutes."
+msgstr "Please specify the cache expiration in minutes. Minimum is 5 minutes."
+
+#: includes/components/class-incredibbble-options.php:77
+msgid "Components"
+msgstr "Components"
+
+#: includes/components/class-incredibbble-options.php:78
+#: includes/components/class-incredibbble-options.php:84
+msgid "3rd party API (application program interface) configuration."
+msgstr "3rd party API (application program interface) configuration."
+
+#: includes/components/class-incredibbble-options.php:83
+msgid "API Configuration"
+msgstr "API Configuration"
+
+#: includes/components/class-incredibbble-options.php:118
+#: includes/components/class-incredibbble-options.php:119
+#: templates/options.php:4
+msgid "Theme Options"
+msgstr "Theme Options"
+
+#: includes/components/class-incredibbble-options.php:419
+msgid "Options saved."
+msgstr "Options saved."
+
+#: includes/components/class-incredibbble-options.php:444
+msgid "Default options has been succesfully restored."
+msgstr "Default options has been succesfully restored."
+
+#: includes/components/class-incredibbble-options.php:491
+msgid "Could not instantiate WP_Filesystem."
+msgstr "Could not instantiate WP_Filesystem."
+
+#: includes/components/class-incredibbble-options.php:505
+msgid "Unable to load data from this file."
+msgstr "Unable to load data from this file."
+
+#: includes/components/class-incredibbble-options.php:511
+msgid "Invalid backup file."
+msgstr "Invalid backup file."
+
+#: includes/components/class-incredibbble-options.php:516
+msgid "Your backup has been succesfully restored."
+msgstr "Your backup has been succesfully restored."
+
+#: includes/components/class-incredibbble-twitter-feeds.php:152
+msgid "Twitter"
+msgstr "Twitter"
+
+#: includes/components/class-incredibbble-twitter-feeds.php:158
+msgid "API Key"
+msgstr "API Key"
+
+#: includes/components/class-incredibbble-twitter-feeds.php:159
+msgid "Twitter Consumer Key"
+msgstr "Twitter Consumer Key"
+
+#: includes/components/class-incredibbble-twitter-feeds.php:160
+msgid "Paste your consumer key here."
+msgstr "Paste your consumer key here."
+
+#: includes/components/class-incredibbble-twitter-feeds.php:167
+msgid "API Secret"
+msgstr "API Secret"
+
+#: includes/components/class-incredibbble-twitter-feeds.php:168
+msgid "Twitter Consumer Key Secret"
+msgstr "Twitter Consumer Key Secret"
+
+#: includes/components/class-incredibbble-twitter-feeds.php:169
+msgid "Paste your customer key secret here."
+msgstr "Paste your customer key secret here."
+
+#: includes/components/class-incredibbble-twitter-feeds.php:177
+msgid "Twitter Access Token"
+msgstr "Twitter Access Token"
+
+#: includes/components/class-incredibbble-twitter-feeds.php:178
+msgid "Paste your access token here."
+msgstr "Paste your access token here."
+
+#: includes/components/class-incredibbble-twitter-feeds.php:185
+msgid "Access Token Secret"
+msgstr "Access Token Secret"
+
+#: includes/components/class-incredibbble-twitter-feeds.php:186
+msgid "Twitter Access Token Secret"
+msgstr "Twitter Access Token Secret"
+
+#: includes/components/class-incredibbble-twitter-feeds.php:187
+msgid "Paste your access token secret key here."
+msgstr "Paste your access token secret key here."
+
+#: includes/components/class-incredibbble-twitter-feeds.php:196
+msgid ""
+"Please note that Twitter restrict request limit, only 180 requests of every "
+"15 minutes are allowed. Minimum is 5 minutes."
+msgstr ""
+"Please note that Twitter restrict request limit, only 180 requests of every "
+"15 minutes are allowed. Minimum is 5 minutes."
+
+#: includes/components/class-incredibbble-twitter-feeds.php:327
+msgid "Error"
+msgstr "Error"
+
+#: includes/components/class-incredibbble-twitter-feeds.php:426
+#, php-format
+msgid "about %s ago"
+msgstr "about %s ago"
+
+#: includes/incredibbble-helpers.php:97
+msgid "The uploaded file exceeds the maximum file upload size."
+msgstr "The uploaded file exceeds the maximum file upload size."
+
+#: includes/incredibbble-helpers.php:101
+msgid "The uploaded file was only partially uploaded."
+msgstr "The uploaded file was only partially uploaded."
+
+#: includes/incredibbble-helpers.php:105
+msgid "Missing a temporary folder."
+msgstr "Missing a temporary folder."
+
+#: includes/incredibbble-helpers.php:109
+msgid "No file was uploaded."
+msgstr "No file was uploaded."
+
+#: includes/widgets/class-incredibbble-instagram-widget.php:26
+msgid "Incredibbble Instagram Feeds"
+msgstr "Incredibbble Instagram Feeds"
+
+#: includes/widgets/class-incredibbble-posts-widget.php:43
+msgid "Incredibbble Posts"
+msgstr "Incredibbble Posts"
+
+#: includes/widgets/class-incredibbble-posts-widget.php:65
+msgid "None"
+msgstr "None"
+
+#: includes/widgets/class-incredibbble-posts-widget.php:66
+msgid "Post ID"
+msgstr "Post ID"
+
+#: includes/widgets/class-incredibbble-posts-widget.php:67
+msgid "Post Title"
+msgstr "Post Title"
+
+#: includes/widgets/class-incredibbble-posts-widget.php:68
+msgid "Publish Date"
+msgstr "Publish Date"
+
+#: includes/widgets/class-incredibbble-posts-widget.php:69
+msgid "Random"
+msgstr "Random"
+
+#: includes/widgets/class-incredibbble-posts-widget.php:70
+msgid "Comments Number"
+msgstr "Comments Number"
+
+#: includes/widgets/class-incredibbble-posts-widget.php:74
+msgid "Ascending"
+msgstr "Ascending"
+
+#: includes/widgets/class-incredibbble-posts-widget.php:75
+msgid "Descending"
+msgstr "Descending"
+
+#: includes/widgets/class-incredibbble-social-widget.php:33
+msgid "Incredibbble Social Profiles"
+msgstr "Incredibbble Social Profiles"
+
+#: includes/widgets/class-incredibbble-twitter-feeds-widget.php:23
+msgid "Incredibbble Twitter Feeds"
+msgstr "Incredibbble Twitter Feeds"
+
+#: includes/widgets/class-incredibbble-twitter-feeds-widget.php:44
+msgid "Tweets"
+msgstr "Tweets"
+
+#: templates/backup.php:5 templates/backup.php:19
+msgid "Import"
+msgstr "Import"
+
+#: templates/backup.php:5 templates/backup.php:42
+msgid "Export"
+msgstr "Export"
+
+#: templates/backup.php:6
+msgid "Backup your options."
+msgstr "Backup your options."
+
+#: templates/backup.php:9
+msgid "Import Options"
+msgstr "Import Options"
+
+#: templates/backup.php:10
+msgid "Export Options"
+msgstr "Export Options"
+
+#: templates/backup.php:20
+msgid "Upload options backup file."
+msgstr "Upload options backup file."
+
+#: templates/backup.php:28
+msgid "Import options"
+msgstr "Import options"
+
+#: templates/backup.php:32
+msgid ""
+"Please note this action will overwrite all existing option values, please "
+"proceed with caution!"
+msgstr ""
+"Please note this action will overwrite all existing option values, please "
+"proceed with caution!"
+
+#: templates/backup.php:43
+msgid "Download options backup file."
+msgstr "Download options backup file."
+
+#: templates/backup.php:47
+msgid "Download backup file"
+msgstr "Download backup file"
+
+#: templates/backup.php:49
+msgid ""
+"It's highly recommended to export your current options before make any "
+"changes to avoid loses."
+msgstr ""
+"It's highly recommended to export your current options before make any "
+"changes to avoid loses."
+
+#: templates/controls/image.php:9
+msgid "Remove Image"
+msgstr "Remove Image"
+
+#: templates/options.php:31 templates/options.php:125
+msgid "Version"
+msgstr "Version"
+
+#: templates/options.php:39
+msgid "Import / Export"
+msgstr "Import / Export"
+
+#: templates/options.php:118
+msgid "Restore Defaults"
+msgstr "Restore Defaults"
+
+#: templates/options.php:119
+msgid "Save Changes"
+msgstr "Save Changes"
+
+#: templates/unsupported.php:4
+msgid "Your current theme does not support Incredibble plugin."
+msgstr "Your current theme does not support Incredibble plugin."
+
+#: templates/widgets/form-instagram-feeds.php:12
+#: templates/widgets/form-posts.php:12 templates/widgets/form-social.php:5
+#: templates/widgets/form-twitter-feeds.php:11
+msgid "Title:"
+msgstr "Title:"
+
+#: templates/widgets/form-instagram-feeds.php:17
+#: templates/widgets/form-twitter-feeds.php:16
+msgid "Username:"
+msgstr "Username:"
+
+#: templates/widgets/form-instagram-feeds.php:22
+#: templates/widgets/form-twitter-feeds.php:21
+msgid "Number of Items:"
+msgstr "Number of Items:"
+
+#: templates/widgets/form-instagram-feeds.php:28
+msgid "Image Size:"
+msgstr "Image Size:"
+
+#: templates/widgets/form-instagram-feeds.php:30
+msgid "Small"
+msgstr "Small"
+
+#: templates/widgets/form-instagram-feeds.php:31
+msgid "Medium"
+msgstr "Medium"
+
+#: templates/widgets/form-instagram-feeds.php:32
+msgid "Large"
+msgstr "Large"
+
+#: templates/widgets/form-posts.php:17
+msgid "Number of Posts:"
+msgstr "Number of Posts:"
+
+#: templates/widgets/form-posts.php:22
+msgid "Order By:"
+msgstr "Order By:"
+
+#: templates/widgets/form-posts.php:33
+msgid "Order:"
+msgstr "Order:"
+
+#: templates/widgets/form-posts.php:45
+msgid "Exclude posts without featured image"
+msgstr "Exclude posts without featured image"
+
+#: templates/widgets/form-social.php:11
+msgid "Enter a full URL to your profile page of each social media below:"
+msgstr "Enter a full URL to your profile page of each social media below:"
+
+#~ msgid "Example panel subtitle."
+#~ msgstr "Example panel subtitle."
+
+#~ msgid ""
+#~ "Your current theme does not support <strong>Incredibble</strong> plugin."
+#~ msgstr ""
+#~ "Your current theme does not support <strong>Incredible</strong> plugin."

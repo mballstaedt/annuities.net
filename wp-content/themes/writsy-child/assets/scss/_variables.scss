@@ -1,0 +1,78 @@
+// Breakpoints
+$breakpoints: (
+    xsmall: 0,
+    small:  600px,
+    medium: 960px,
+    large:  1280px,
+    xlarge: 1600px
+) !default;
+
+// Containers
+$containers: (
+    small:  580px,
+    medium: 940px,
+    large:  1170px
+) !default;
+
+// Grid settings
+$grid-columns: 12 !default;
+$grid-gutter: 30px !default;
+$gutters: (
+    xsmall: 20px,
+    small: 20px,
+    medium: 20px,
+    large: 30px,
+    xlarge: 30px
+) !default;
+
+// Font faces.
+$font-primary: "Crimson Text", serif !default;
+$font-secondary: "Dosis", sans-serif !default;
+$font-fixed: monospace, monospace !default;
+
+// Colors
+$color-white: #FFFFFF !default;
+$color-black: #000000 !default;
+$color-accent: #E9BC8E !default;
+$color-divider: #EFEFEF !default;
+
+// Scaffolding
+$background-color: $color-white !default;
+$color: lighten($color-black, 13%) !default;
+$font-family: $font-primary !default;
+$font-size: 16px !default;
+$font-weight: 400 !default;
+$line-height: 1.45 !default;
+$line-height-fixed: floor($font-size * $line-height) !default;
+$text-transform: none;
+
+// Headings
+$heading-color: inherit !default;
+$heading-font-family: $font-secondary !default;
+$heading-font-weight: 300 !default;
+$heading-line-height: inherit !default;
+$heading-text-transform: uppercase !default;
+
+// Heading 1
+$heading-h1-font-size: 28px !default;
+$heading-h1-line-height: 34px !default;
+
+// Heading 2
+$heading-h2-font-size: 24px !default;
+$heading-h2-line-height: 30px !default;
+
+// Heading 3
+$heading-h3-font-size: 18px !default;
+$heading-h3-line-height: 24px !default;
+
+// Heading 4
+$heading-h4-font-size: 16px !default;
+$heading-h4-line-height: 24px !default;
+
+// Heading5
+$heading-h5-font-size: 14px !default;
+$heading-h5-line-height: 22px !default;
+
+// Heading 6
+$heading-h6-font-size: 12px !default;
+$heading-h6-line-height: 22px !default;

@@ -1,0 +1,120 @@
+function popUpvalidateForm(e) {
+    var t = "";
+    return document.getElementById("investment") && "" == $.trim(document.getElementById("investment").value) && (t += "Please select Retirement Savings.\n"), document.getElementById("first_name") && "" == $.trim(document.getElementById("first_name").value) && (t += "Please enter your first name.\n"), document.getElementById("last_name") && "" == $.trim(document.getElementById("last_name").value) && (t += "Please enter your last name.\n"), document.getElementById("street") && "" == $.trim(document.getElementById("street").value) && (t += "Please enter street address.\n"), document.getElementById("zip_code") && ("" == document.getElementById("zip_code").value ? t += "Please enter zip code.\n" : 0 == isInteger(document.getElementById("zip_code").value) ? t += "Please enter proper zip code\n" : "00000" == document.getElementById("zip_code").value && (t += "Please enter proper zip code\n")), document.getElementById("phone_day") && ("" == document.getElementById("phone_day").value ? t += "Please enter Day phone number.\n" : 0 == checkInternationalPhone(document.getElementById("phone_day").value) && (t += "Please enter valid Day phone number.\n")), document.getElementById("email") && ("" == document.getElementById("email").value ? t += "Please enter email address.\n" : /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(document.getElementById("email").value) || (t += "Please enter correct email address.\n")), document.getElementById("dob_y") && "" == document.getElementById("dob_y").value && (t += "Please select Year of birth.\n"), "" != t ? (alert(t), !1) : ($("#form_submit").removeAttr("onclick"), void $("#" + e).submit())
+}
+
+function inArray(e, t) {
+    for (var n = t.length, a = 0; n > a; a++) if (t[a] == e) return !0;
+    return !1
+}
+
+function checkInternationalPhone(e) {
+    var t = 3;
+    if (e = trim(e), e.indexOf("+") > 1) return !1;
+    if (-1 != e.indexOf("-") && (t += 1), -1 != e.indexOf("(") && e.indexOf("(") > t) return !1;
+    var n = e.indexOf("(");
+    return -1 != e.indexOf("(") && ")" != e.charAt(n + 4) ? !1 : -1 == e.indexOf("(") && -1 != e.indexOf(")") ? !1 : (s = stripCharsInBag(e, validWorldPhoneChars), isInteger(s) && s.length >= minDigitsInIPhoneNumber)
+}
+
+function stripCharsInBag(e, t) {
+    var n, a = "";
+    for (n = 0; n < e.length; n++) {
+        var r = e.charAt(n);
+        -1 == t.indexOf(r) && (a += r)
+    }
+    return a
+}
+
+function isInteger(e) {
+    var t;
+    for (t = 0; t < e.length; t++) {
+        var n = e.charAt(t);
+        if ("0" > n || n > "9") return !1
+    }
+    return !0
+}
+
+function setState(e, t) {
+    var n, a;
+    t && (document.getElementById("div_state"), document.getElementById("div_city")), "" != e && (a = e[0].state, n = e[0].name, document.getElementById("state").value = a, document.getElementById("city").value = n)
+}
+
+function trim(e) {
+    var t, n = "";
+    for (t = 0; t < e.length; t++) {
+        var a = e.charAt(t);
+        " " != a && (n += a)
+    }
+    return n
+}
+
+function validateInvalidOffer() {
+    var e = "";
+    return "" == $.trim($("#best_number").val()) || "Phone" == $.trim($("#best_number").val()) ? e += "  Phone\n" : checkInternationalPhone($.trim($("#best_number").val())) || (e += "  Phone Invalid\n"), "" != e ? (alert("Missing Required Fields\n" + e), !1) : void $("#invalid_form").submit()
+}
+
+function showTYP(e, t, n) {
+    top.location.href = ARQBackendURL + "ThankYouPages/?lp=" + e + "&vl_type=" + t + "&lead_id=" + n
+}
+
+function cdsValidate() {
+    var e = "";
+    return "" == $.trim($("#best_number").val()) || "Phone" == $.trim($("#best_number").val()) ? e += "  Phone\n" : checkInternationalPhone($.trim($("#best_number").val())) || (e += "  Phone Invalid\n"), "" == $.trim($("#follow_up_time").val()) && (e += "  Please select best time of day to call.\n"), "" != e ? (alert("Missing Required Fields\n" + e), !1) : void $("#cds_form").submit()
+}
+
+function get_city_state(e, t) {
+    "" != jQuery.trim(e) && $.getJSON(ajaxURL + "?zip_code=" + e + "&tagmode=any&format=json&jsoncallback=?", function (e) {
+        setState(e, t)
+    }).fail(function () {
+        t && alert("Type in a Valid 5 Digit Zip Code")
+    })
+}
+
+function popUpvalidateReverseMortageThankyouForm() {
+    var e = "", t = !1;
+    return document.getElementById("house_type") && "" == document.getElementById("house_type").value && (e += "Please select House Type.\n"), document.getElementById("estimated_home_val") && "" == document.getElementById("estimated_home_val").value && (e += "Please enter Estimated Home Value.\n"), document.getElementById("estimated_mortgage_bal") && "" == document.getElementById("estimated_mortgage_bal").value && (e += "Please enter Estimated Mortgage Balance.\n"), "" != e ? (alert(e), !1) : (document.getElementById("form-loader-image") && $("#form-loader-image").show(), void(t || (t = !0, $.getJSON(apiURL + "php_handler/save_thank_form_new.php?ttkk=1&" + $("#_landingthankform").serialize() + "&tagmode=any&form_type=1&format=json&jsoncallback=?", function (e) {
+        if (t = !1, e) {
+            if (e.result && "error" == e.result) return document.getElementById("form-loader-image") && $("#form-loader-image").hide(), document.getElementById("new_landing_thanks") && ($("#annuity_form").hide(), $("#new_landing_thanks").show()), !1;
+            e.result && "success" == e.result && (document.getElementById("form-loader-image") && $("#form-loader-image").hide(), $("#annuity_form").hide(), $("#new_landing_thanks").show(), "undefined" != typeof e.qualifiedPixcelCode && $("#new_landing_thanks").append(e.qualifiedPixcelCode), "undefined" != typeof e.offerPixcelCode && $("#new_landing_thanks").append(e.offerPixcelCode))
+        }
+    }, "json"))))
+}
+
+function setScreenResolution() {
+    $("#screen_width").val(screen.width), $("#screen_height").val(screen.height)
+}
+
+function validateZip(e) {
+    5 == $("#zip_code").val().length && "00000" != $("#zip_code").val() ? ($("#submit_form").removeAttr("onclick"), $("#" + e).submit()) : alert("Please provide valid zip code")
+}
+
+function validate_dob_y(e) {
+    var t = "";
+    return document.getElementById("dob_y") && ("" == document.getElementById("dob_y").value ? t += "Please enter Year of Birth.\n" : 0 == isInteger(document.getElementById("dob_y").value) ? t += "Please enter proper Year of Birth\n" : document.getElementById("dob_y").value.length < 4 && (t += "Please enter proper Year of birth\n")), "" != t ? (alert(t), !1) : ($("#submit_form").removeAttr("onclick"), void $("#" + e).submit())
+}
+
+function setInvestmentAmount(e, t) {
+    e ? document.getElementById("investment").value = "$25,000 - $50,000" : document.getElementById("investment").value = "$10,000 - $25,000", "" != document.getElementById("investment").value && ($("#submit_form").removeAttr("onclick"), $("#" + t).submit())
+}
+
+function validate_retirement_concerns(e) {
+    var t = "";
+    return "" != t ? (alert(t), !1) : ($("#submit_form").removeAttr("onclick"), void $("#" + e).submit())
+}
+
+function skipRetirementConcerns(e) {
+    $("#" + e).submit()
+}
+
+function validate_multi_wizard_form(e) {
+    var t = "";
+    return document.getElementById("first_name") && "" == $.trim(document.getElementById("first_name").value) && (t += "Please enter your first name.\n"), document.getElementById("last_name") && "" == $.trim(document.getElementById("last_name").value) && (t += "Please enter your last name.\n"), document.getElementById("email") && ("" == document.getElementById("email").value ? t += "Please enter email address.\n" : /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(document.getElementById("email").value) || (t += "Please enter correct email address.\n")), document.getElementById("phone_day") && ("" == document.getElementById("phone_day").value ? t += "Please enter phone number.\n" : 0 == checkInternationalPhone(document.getElementById("phone_day").value) && (t += "Please enter valid phone number.\n")), "" != t ? (alert(t), !1) : ($("#submit_form").removeAttr("onclick"), void $("#" + e).submit())
+}
+
+function formValidateFields(e) {
+    var t = "";
+    return document.getElementById("investment") && "" == $.trim(document.getElementById("investment").value) && (t += "Please select Retirement Savings.\n"), document.getElementById("first_name") && "" == $.trim(document.getElementById("first_name").value) && (t += "Please enter your first name.\n"), document.getElementById("last_name") && "" == $.trim(document.getElementById("last_name").value) && (t += "Please enter your last name.\n"), document.getElementById("zip_code") && ("" == document.getElementById("zip_code").value ? t += "Please enter zip code.\n" : 0 == isInteger(document.getElementById("zip_code").value) ? t += "Please enter proper zip code\n" : "00000" == document.getElementById("zip_code").value && (t += "Please enter proper zip code\n")), document.getElementById("phone_day") && ("" == document.getElementById("phone_day").value ? t += "Please enter Day phone number.\n" : 0 == checkInternationalPhone(document.getElementById("phone_day").value) && (t += "Please enter valid Day phone number.\n")), document.getElementById("email") && ("" == document.getElementById("email").value ? t += "Please enter email address.\n" : /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(document.getElementById("email").value) || (t += "Please enter correct email address.\n")), document.getElementById("dob_y") && "" == document.getElementById("dob_y").value && (t += "Please select Year of birth.\n"), "" != t ? (alert(t), !1) : ($("#form_submit").removeAttr("onclick"), void $("#" + e).submit())
+}
+
+var phoneNumberDelimiters = "-, ) , (", validWorldPhoneChars = phoneNumberDelimiters + "", minDigitsInIPhoneNumber = 10,
+    ARQBackendURL = protocol + "offers.annuityratequotes.net/";

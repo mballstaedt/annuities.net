@@ -1,0 +1,51 @@
+
+  /******Newversion****/
+  .about-widget{padding:0;}
+  .about-widget .investment-annuity .right-div{width:80%;}
+  .footer-decription p{width:95%;}
+
+  .formbox.new-form-bx{background:none;border-bottom-right-radius: 0; border-bottom-left-radius: 0;}
+  .formbox.new-form-bx h3{background: #4069a4}
+  .formbox.new-form-bx .form-box-main{border-bottom:2px solid #4069a4;border-radius:0; }
+  .choose-section-snippet{background: #eeeeee;padding:15px 30px 40px; }
+  .inner-snippet h4{box-shadow: 0px 15px 10px -15px #111;}
+  .inner-snippet h4 {
+    box-shadow: 1px 8px 6px -8px #aeaeae;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #535353;
+}
+.inner-snippet ul{margin:0;padding:0;padding-left: 25px;margin-bottom: 25px; }
+.inner-snippet ul li{list-style-image: url('../images/p-check.png');line-height: 27px;padding-bottom:8px;}
+.t-figure {
+
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+
+}
+.t-copy {
+
+    display: inline-block;
+    width: 59%;
+    vertical-align: middle;
+}
+.c-testimonials{padding-bottom: 25px;}
+.shopper-img {
+
+    text-align: center;
+    background: #fff;padding:5px;
+
+}
+.name-cus{color: #337ab7}
+
+@media screen and (max-width: 495px) {
+
+.content{padding:0;}
+.about-widget .investment-annuity .right-div{width:100%;}
+.formbox.new-form-bx{margin:0;margin-bottom:20px;}
+.t-figure{display: block;margin:0;text-align: center;}
+.t-copy{width:100%; text-align: center;}
+}

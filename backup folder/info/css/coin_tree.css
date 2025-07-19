@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{margin:0;padding:0;font-family: 'PT Sans', sans-serif;background:#f5f5f5 !important;}
+.outer-container{max-width:1000px;margin:0 auto;width:100%;background:#fff;}
+.header {
+    padding: 15px 0 !important;
+    margin:0 !important;
+}
+.slogan{text-align:right;font-size:14px;color:#525252;font-style:italic;font-family: 'PT Sans', sans-serif;padding:30px 0;}
+.banner{ background:url(../images/banner_ct.png); background-repeat:no-repeat; min-height:500px;margin-bottom:30px;}
+.arrow-large{
+    background: url(../images/arrow-mesage_ct.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 175px;
+    margin-top: 94px;
+    position: relative;
+    background-size: 100% 80%;
+}
+.return-tax {
+    position: absolute;
+    bottom: 73px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+form.annuity-rates-form {
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px 35px;
+    background: rgba(255, 255, 255, 0.4);
+    position:relative;
+    background-color: #ffffff;
+}
+.annuity-rates-form input[type="text"]{
+    width:100%;
+    background:#ededed;padding:9px 20px;margin-bottom:15px;
+    border:0;
+    color:#404040;
+    font-size:14px;
+}
+.annuity-rates-form select{
+    width:100%;
+    background:#ededed;padding:9px 20px;margin-bottom:15px;
+    border:0;
+    color:#404040;
+    font-size:14px;
+}
+.annuity-rates-form h3 {
+    color: #d46501;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.get-rate-btn{
+
+    position: absolute;
+    bottom: -36px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fe9e01+0,fd9902+19,f67709+100 */
+    background: #fe9e01; /* Old browsers */
+    background: -moz-linear-gradient(top, #fe9e01 0%, #fd9902 19%, #f67709 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fe9e01 0%,#fd9902 19%,#f67709 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fe9e01 0%,#fd9902 19%,#f67709 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe9e01', endColorstr='#f67709',GradientType=0 ); /* IE6-9 */
+    width: 74%;
+    border: 0;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    padding: 10px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 0 0 3px #000;
+    color: #fff;
+    left: 50%;
+    margin:0 0 0 -37%;
+    box-shadow: 4px 4px 4px #656563;
+    -moz-box-shadow: 4px 4px 4px #656563;
+    -webkit-box-shadow: 4px 4px 4px #656563;
+    box-shadow: 4px 4px 4px #656563;
+    text-align:center;
+
+}
+.get-rate-btn:hover{ text-decoration:none !important;color:#fff !important;background:#f67709;}
+.prime-heading {
+    color: #002e5c;
+    font-size: 33px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 30px;
+}
+.secondary-heading {
+    font-size: 24px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color:#636463;
+}
+ul.listing-points {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-left: 260px;
+    margin-top: 70px;
+}
+ul.listing-points li {
+    list-style-image:url(../images/arrow_ct.png);
+    background-repeat:no-repeat;
+    font-size:17px;
+    text-align:left;
+    margin-bottom:10px;
+    color:#606060;
+}
+.g-text {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: arial;
+}
+.v-text {
+    position: relative;
+    text-align: left;
+    font-size: 12px;
+    margin-top: -30px;
+    padding-left: 10px;
+}
+.header a img {
+    width: 200px;
+}
+.slogan {
+    font-size: 18px;
+    padding: 15px 0;
+}
+/***************trust-images**************/
+ .trust-logos-row {
+    text-align: center;
+    margin-top: 20px;
+	}
+	.trust-logos-row a {
+		display: inline-block;
+		width: 75px;
+		margin-right: 10px;
+	}
+.trust-logos-row a img{width:100%;}
+	.trust-logos-row a:nth-child(2) {
+		margin-right: 0;
+	}
+@media screen and (max-width: 600px){
+
+
+    .return-tax {
+        bottom: 47px;
+        font-size: 21px;
+    }
+    .slogan {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .header .col-xs-6 {
+        width: 100%;
+    }
+    .cg-main-logo {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .banner .row{margin:0 !important}
+    .v-text{padding-left:10px;}
+    ul.listing-points{margin-left:0;}
+
+}
+@media screen and (max-width: 490px){
+
+    .prime-heading{font-size:24px;}
+
+    .return-tax {
+        bottom: 52px;
+        font-size: 15px;
+    }
+    .footer-decription p{width:95%;}
+}
+/*@media screen and (max-width:600px){
+    .return-tax {
+        bottom: 33px;
+        font-size: 21px;
+
+    }
+    .arrow-large {
+
+        width: 100%;
+        min-height:125px;
+    }
+    form.annuity-rates-form{background:#fff;}
+}*/
+/*@media screen and (max-width:400px){
+    .return-tax {
+        bottom: 39px;
+        font-size: 16px;
+        font-weight: normal;
+    }
+}*/
